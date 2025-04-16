@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y+CvhRWU2OE=",
+  "dgSpecHash": "4U9v2fAEwoA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\project-delivery\\project-delivery.csproj",
+  "projectFilePath": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arthurd\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.4\\microsoft.aspnetcore.authorization.9.0.4.nupkg.sha512",
     "C:\\Users\\arthurd\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.4\\microsoft.aspnetcore.components.9.0.4.nupkg.sha512",

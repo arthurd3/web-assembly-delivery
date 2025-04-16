@@ -1762,11 +1762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\project-delivery\\project-delivery.csproj",
+      "projectUniqueName": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
       "projectName": "project-delivery",
-      "projectPath": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\project-delivery\\project-delivery.csproj",
+      "projectPath": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
       "packagesPath": "C:\\Users\\arthurd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\project-delivery\\obj\\",
+      "outputPath": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arthurd\\AppData\\Roaming\\NuGet\\NuGet.Config"
