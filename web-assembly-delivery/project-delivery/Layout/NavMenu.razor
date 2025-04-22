@@ -1,36 +1,27 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Delivery</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+﻿<!-- Top Navbar com mesma largura do side menu -->
+<div class="md:w-64 w-full flex justify-center items-center h-14 bg-white border-gray-300 px-4 md:rounded-none rounded-t-xl">
+    <a class="text-4xl font-semibold text-gray-900 dark:gray" href="/"> Delivery 🍟</a>
+    
+    <button title="Navigation menu" class="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none center" @onclick="ToggleNavMenu"></button>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
+<!-- Side Menu Links -->
+<div class="@NavMenuCssClass space-y-4 p-6 bg-white shadow-lg rounded-b-xl md:rounded-none md:sticky md:top-14 md:h-[calc(100vh-3.5rem)] md:w-64">
+    <NavLink 
+        class="block w-full text-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-base px-4 py-3 transition duration-300 ease-in-out dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        href="/register-food" Match="NavLinkMatch.All">
+        🍽️ Registrar Comida
+    </NavLink>
+    <NavLink 
+        class="block w-full text-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-base px-4 py-3 transition duration-300 ease-in-out dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        href="/list-food" Match="NavLinkMatch.All">
+        📋 Listar Comidas
+    </NavLink>
 </div>
 
 @code {
     private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string? NavMenuCssClass => collapseNavMenu ? "hidden md:block" : "block";
 
     private void ToggleNavMenu()
     {

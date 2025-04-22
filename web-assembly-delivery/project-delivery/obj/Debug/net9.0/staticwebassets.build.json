@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XOYp7Dq3tNLs9bcuhvL5KwB1iYlWahYP5VKBJhG2R6c=",
+  "Hash": "gkBKlRCziT6z2H3HPKCQKoWoNVHECaEu1mtG/vCQdgI=",
   "Source": "project-delivery",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "t4zxu2ixqt",
-      "Integrity": "HbaRtNNnIutHcbFWdzOic8GcReW7XMMR6VuydnyxcrE=",
+      "Fingerprint": "8ijwmdhk89",
+      "Integrity": "QJthCJjm0tnei+fMAQXOvXyzzDfHkEmQGIngTIPpSL4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -871,8 +871,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "c8dljsq2y0",
-      "Integrity": "PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o=",
+      "Fingerprint": "byxc61s8y8",
+      "Integrity": "42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\project-delivery.pdb"
@@ -892,8 +892,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "1g0x9m42uk",
-      "Integrity": "f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw=",
+      "Fingerprint": "u0qits7npc",
+      "Integrity": "PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\webcil\\project-delivery.wasm"
@@ -4343,12 +4343,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-4mu4zd4edn.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-6hjy9wfwjx.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "project-delivery#[.{fingerprint=4mu4zd4edn}]!.bundle.scp.css.gz",
+      "RelativePath": "project-delivery#[.{fingerprint=6hjy9wfwjx}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -4357,8 +4357,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\project-delivery.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m8stj8mkym",
-      "Integrity": "NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=",
+      "Fingerprint": "osaall33yt",
+      "Integrity": "KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\project-delivery.bundle.scp.css"
@@ -5225,7 +5225,7 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.HttpListener.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-t4zxu2ixqt.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-8ijwmdhk89.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
@@ -5239,8 +5239,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "11xw3ztbfs",
-      "Integrity": "NU75cQoarIAPz3iKCjPtvWMUPI5ZR4WDQ4OXQoNw8Wk=",
+      "Fingerprint": "vtub59c6zr",
+      "Integrity": "LWaeKIXdSFuSYWIGodJ8QQqczWCQYzssPqxNEwf8DtM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5918,12 +5918,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-1g0x9m42uk.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-u0qits7npc.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/project-delivery#[.{fingerprint=1g0x9m42uk}]!.wasm.gz",
+      "RelativePath": "_framework/project-delivery#[.{fingerprint=u0qits7npc}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5932,8 +5932,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jb6y4j6srb",
-      "Integrity": "f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y=",
+      "Fingerprint": "0r9nk3ggq2",
+      "Integrity": "5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm"
@@ -6296,12 +6296,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-c8dljsq2y0.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-byxc61s8y8.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/project-delivery#[.{fingerprint=c8dljsq2y0}]!.pdb.gz",
+      "RelativePath": "_framework/project-delivery#[.{fingerprint=byxc61s8y8}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6310,8 +6310,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9pf57i2aqh",
-      "Integrity": "Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU=",
+      "Fingerprint": "qpz5fxug6f",
+      "Integrity": "8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb"
@@ -7115,12 +7115,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.Sockets.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-4mu4zd4edn.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-6hjy9wfwjx.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "project-delivery#[.{fingerprint=4mu4zd4edn}]?.styles.css.gz",
+      "RelativePath": "project-delivery#[.{fingerprint=6hjy9wfwjx}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -7129,8 +7129,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\bundle\\project-delivery.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m8stj8mkym",
-      "Integrity": "NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=",
+      "Fingerprint": "osaall33yt",
+      "Integrity": "KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\bundle\\project-delivery.styles.css"
@@ -7346,12 +7346,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Xml.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-4aapry0kjg.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-2wee1nv6fn.gz",
       "SourceId": "project-delivery",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "css/output#[.{fingerprint=4aapry0kjg}]?.css.gz",
+      "RelativePath": "css/output#[.{fingerprint=2wee1nv6fn}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7360,8 +7360,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fsb7h86z3a",
-      "Integrity": "byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w=",
+      "Fingerprint": "vrku1rxkky",
+      "Integrity": "VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css"
@@ -8725,8 +8725,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "4mu4zd4edn",
-      "Integrity": "/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=",
+      "Fingerprint": "6hjy9wfwjx",
+      "Integrity": "5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\bundle\\project-delivery.styles.css"
@@ -8746,8 +8746,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "4mu4zd4edn",
-      "Integrity": "/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=",
+      "Fingerprint": "6hjy9wfwjx",
+      "Integrity": "5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\project-delivery.bundle.scp.css"
@@ -8788,8 +8788,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4aapry0kjg",
-      "Integrity": "tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM=",
+      "Fingerprint": "2wee1nv6fn",
+      "Integrity": "4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\output.css"
@@ -8899,11 +8899,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HbaRtNNnIutHcbFWdzOic8GcReW7XMMR6VuydnyxcrE=\""
+          "Value": "\"QJthCJjm0tnei+fMAQXOvXyzzDfHkEmQGIngTIPpSL4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8913,18 +8913,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HbaRtNNnIutHcbFWdzOic8GcReW7XMMR6VuydnyxcrE="
+          "Value": "sha256-QJthCJjm0tnei+fMAQXOvXyzzDfHkEmQGIngTIPpSL4="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-t4zxu2ixqt.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-8ijwmdhk89.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081195193"
+          "Quality": "0.000081168831"
         }
       ],
       "ResponseHeaders": [
@@ -8934,15 +8934,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12315"
+          "Value": "12319"
         },
         {
           "Name": "ETag",
-          "Value": "\"NU75cQoarIAPz3iKCjPtvWMUPI5ZR4WDQ4OXQoNw8Wk=\""
+          "Value": "\"LWaeKIXdSFuSYWIGodJ8QQqczWCQYzssPqxNEwf8DtM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:24:15 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8962,19 +8962,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"HbaRtNNnIutHcbFWdzOic8GcReW7XMMR6VuydnyxcrE=\""
+          "Value": "W/\"QJthCJjm0tnei+fMAQXOvXyzzDfHkEmQGIngTIPpSL4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HbaRtNNnIutHcbFWdzOic8GcReW7XMMR6VuydnyxcrE="
+          "Value": "sha256-QJthCJjm0tnei+fMAQXOvXyzzDfHkEmQGIngTIPpSL4="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-t4zxu2ixqt.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-8ijwmdhk89.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8983,7 +8983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12315"
+          "Value": "12319"
         },
         {
           "Name": "Content-Type",
@@ -8991,11 +8991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NU75cQoarIAPz3iKCjPtvWMUPI5ZR4WDQ4OXQoNw8Wk=\""
+          "Value": "\"LWaeKIXdSFuSYWIGodJ8QQqczWCQYzssPqxNEwf8DtM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:24:15 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9013,7 +9013,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NU75cQoarIAPz3iKCjPtvWMUPI5ZR4WDQ4OXQoNw8Wk="
+          "Value": "sha256-LWaeKIXdSFuSYWIGodJ8QQqczWCQYzssPqxNEwf8DtM="
         }
       ]
     },
@@ -20479,168 +20479,7 @@
       ]
     },
     {
-      "Route": "_framework/project-delivery.1g0x9m42uk.wasm",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24853"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1g0x9m42uk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/project-delivery.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/project-delivery.1g0x9m42uk.wasm",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-1g0x9m42uk.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000098716683"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10129"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1g0x9m42uk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/project-delivery.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/project-delivery.1g0x9m42uk.wasm.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-1g0x9m42uk.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1g0x9m42uk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/project-delivery.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/project-delivery.c8dljsq2y0.pdb",
+      "Route": "_framework/project-delivery.byxc61s8y8.pdb",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -20650,7 +20489,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26176"
+          "Value": "29784"
         },
         {
           "Name": "Content-Type",
@@ -20658,11 +20497,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o=\""
+          "Value": "\"42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20672,7 +20511,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c8dljsq2y0"
+          "Value": "byxc61s8y8"
         },
         {
           "Name": "label",
@@ -20680,18 +20519,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o="
+          "Value": "sha256-42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.c8dljsq2y0.pdb",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-c8dljsq2y0.gz",
+      "Route": "_framework/project-delivery.byxc61s8y8.pdb",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-byxc61s8y8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051717005"
+          "Quality": "0.000044265415"
         }
       ],
       "ResponseHeaders": [
@@ -20701,15 +20540,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19335"
+          "Value": "22590"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU=\""
+          "Value": "\"8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20729,13 +20568,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o=\""
+          "Value": "W/\"42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c8dljsq2y0"
+          "Value": "byxc61s8y8"
         },
         {
           "Name": "label",
@@ -20743,13 +20582,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o="
+          "Value": "sha256-42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.c8dljsq2y0.pdb.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-c8dljsq2y0.gz",
+      "Route": "_framework/project-delivery.byxc61s8y8.pdb.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-byxc61s8y8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -20758,7 +20597,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19335"
+          "Value": "22590"
         },
         {
           "Name": "Content-Type",
@@ -20766,11 +20605,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU=\""
+          "Value": "\"8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20788,7 +20627,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c8dljsq2y0"
+          "Value": "byxc61s8y8"
         },
         {
           "Name": "label",
@@ -20796,7 +20635,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU="
+          "Value": "sha256-8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY="
         }
       ]
     },
@@ -20811,7 +20650,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26176"
+          "Value": "29784"
         },
         {
           "Name": "Content-Type",
@@ -20819,11 +20658,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o=\""
+          "Value": "\"42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20833,18 +20672,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o="
+          "Value": "sha256-42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE="
         }
       ]
     },
     {
       "Route": "_framework/project-delivery.pdb",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-c8dljsq2y0.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-byxc61s8y8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051717005"
+          "Quality": "0.000044265415"
         }
       ],
       "ResponseHeaders": [
@@ -20854,15 +20693,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19335"
+          "Value": "22590"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU=\""
+          "Value": "\"8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20882,19 +20721,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o=\""
+          "Value": "W/\"42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PDmmE/lkqycn8iU56zRwlTUE5Z+uNvn6x+5sxForO7o="
+          "Value": "sha256-42Cnk8M+7iUe+CAHayzNgkp3G8LXc016g7xd6YHjAbE="
         }
       ]
     },
     {
       "Route": "_framework/project-delivery.pdb.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-c8dljsq2y0.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-byxc61s8y8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -20903,7 +20742,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19335"
+          "Value": "22590"
         },
         {
           "Name": "Content-Type",
@@ -20911,11 +20750,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU=\""
+          "Value": "\"8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20933,7 +20772,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Q5IeEYn3zlXL8DxJSZbbWBDPOzhuxrYLh1Owwkc0qFU="
+          "Value": "sha256-8kjibz0Bk57iQBuSz6euuLvz5Ywnovgm4N3jAz7+ewY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/project-delivery.u0qits7npc.wasm",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 01:11:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u0qits7npc"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/project-delivery.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/project-delivery.u0qits7npc.wasm",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-u0qits7npc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000083605050"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11960"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u0qits7npc"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/project-delivery.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/project-delivery.u0qits7npc.wasm.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-u0qits7npc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11960"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u0qits7npc"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/project-delivery.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk="
         }
       ]
     },
@@ -20948,7 +20948,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24853"
+          "Value": "28437"
         },
         {
           "Name": "Content-Type",
@@ -20956,11 +20956,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw=\""
+          "Value": "\"PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20970,18 +20970,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw="
+          "Value": "sha256-PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo="
         }
       ]
     },
     {
       "Route": "_framework/project-delivery.wasm",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-1g0x9m42uk.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-u0qits7npc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000098716683"
+          "Quality": "0.000083605050"
         }
       ],
       "ResponseHeaders": [
@@ -20991,15 +20991,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10129"
+          "Value": "11960"
         },
         {
           "Name": "ETag",
-          "Value": "\"f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y=\""
+          "Value": "\"5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21019,19 +21019,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw=\""
+          "Value": "W/\"PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-f/7AtRdIWgjZXVyo+W16mxX/sYsnQQJK9YeQXZH6/kw="
+          "Value": "sha256-PrH4jKgA2n5YGehxG7gJZ7tp5PZ1szlBhXoHQlsqXRo="
         }
       ]
     },
     {
       "Route": "_framework/project-delivery.wasm.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-1g0x9m42uk.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-u0qits7npc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21040,7 +21040,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10129"
+          "Value": "11960"
         },
         {
           "Name": "Content-Type",
@@ -21048,11 +21048,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y=\""
+          "Value": "\"5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:54:40 GMT"
+          "Value": "Tue, 22 Apr 2025 01:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21070,7 +21070,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-f2TJGjDvRPI/ilOl4bBNh0L64LTvVLkZJRsoGAdS50Y="
+          "Value": "sha256-5O63pJWmvAake1k151jRbXv0rZ08AZIW+fwY0mbfzwk="
         }
       ]
     },
@@ -69649,13 +69649,13 @@
       ]
     },
     {
-      "Route": "css/output.4aapry0kjg.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-4aapry0kjg.gz",
+      "Route": "css/output.2wee1nv6fn.css",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-2wee1nv6fn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000149588631"
+          "Quality": "0.000258531541"
         }
       ],
       "ResponseHeaders": [
@@ -69665,15 +69665,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6684"
+          "Value": "3867"
         },
         {
           "Name": "ETag",
-          "Value": "\"byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w=\""
+          "Value": "\"VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:44:22 GMT"
+          "Value": "Tue, 22 Apr 2025 01:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69693,13 +69693,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM=\""
+          "Value": "W/\"4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4aapry0kjg"
+          "Value": "2wee1nv6fn"
         },
         {
           "Name": "label",
@@ -69707,12 +69707,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM="
+          "Value": "sha256-4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8="
         }
       ]
     },
     {
-      "Route": "css/output.4aapry0kjg.css",
+      "Route": "css/output.2wee1nv6fn.css",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -69722,7 +69722,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "38793"
+          "Value": "17758"
         },
         {
           "Name": "Content-Type",
@@ -69730,11 +69730,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM=\""
+          "Value": "\"4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:44:22 GMT"
+          "Value": "Tue, 22 Apr 2025 01:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69744,7 +69744,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4aapry0kjg"
+          "Value": "2wee1nv6fn"
         },
         {
           "Name": "label",
@@ -69752,13 +69752,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM="
+          "Value": "sha256-4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8="
         }
       ]
     },
     {
-      "Route": "css/output.4aapry0kjg.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-4aapry0kjg.gz",
+      "Route": "css/output.2wee1nv6fn.css.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-2wee1nv6fn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -69767,7 +69767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6684"
+          "Value": "3867"
         },
         {
           "Name": "Content-Type",
@@ -69775,11 +69775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w=\""
+          "Value": "\"VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:44:22 GMT"
+          "Value": "Tue, 22 Apr 2025 01:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69797,7 +69797,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4aapry0kjg"
+          "Value": "2wee1nv6fn"
         },
         {
           "Name": "label",
@@ -69805,18 +69805,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w="
+          "Value": "sha256-VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs="
         }
       ]
     },
     {
       "Route": "css/output.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-4aapry0kjg.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-2wee1nv6fn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000149588631"
+          "Quality": "0.000258531541"
         }
       ],
       "ResponseHeaders": [
@@ -69826,15 +69826,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6684"
+          "Value": "3867"
         },
         {
           "Name": "ETag",
-          "Value": "\"byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w=\""
+          "Value": "\"VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:44:22 GMT"
+          "Value": "Tue, 22 Apr 2025 01:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69854,13 +69854,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM=\""
+          "Value": "W/\"4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM="
+          "Value": "sha256-4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8="
         }
       ]
     },
@@ -69875,7 +69875,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "38793"
+          "Value": "17758"
         },
         {
           "Name": "Content-Type",
@@ -69883,11 +69883,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM=\""
+          "Value": "\"4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:44:22 GMT"
+          "Value": "Tue, 22 Apr 2025 01:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69897,13 +69897,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tDygrkpfVEXxMx6HkoQNrCD+EVzzWgR3DKgnpoikxSM="
+          "Value": "sha256-4g88tkORb80mWUZgARgjGGhGhgytUju2qi55D0CsIX8="
         }
       ]
     },
     {
       "Route": "css/output.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-4aapry0kjg.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-2wee1nv6fn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -69912,7 +69912,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6684"
+          "Value": "3867"
         },
         {
           "Name": "Content-Type",
@@ -69920,11 +69920,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w=\""
+          "Value": "\"VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:44:22 GMT"
+          "Value": "Tue, 22 Apr 2025 01:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69942,7 +69942,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-byhG4qCy9M1in79r3WmxdAsgrp+6SPC0bF1yZTgcJ/w="
+          "Value": "sha256-VT4308aHJkGKjDE4FHu6v6hJLrUwyCMUB1iPYu7SPzs="
         }
       ]
     },
@@ -70409,13 +70409,13 @@
       ]
     },
     {
-      "Route": "project-delivery.4mu4zd4edn.bundle.scp.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-4mu4zd4edn.gz",
+      "Route": "project-delivery.6hjy9wfwjx.bundle.scp.css",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-6hjy9wfwjx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000621118012"
+          "Quality": "0.001191895113"
         }
       ],
       "ResponseHeaders": [
@@ -70425,15 +70425,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70453,13 +70453,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "W/\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4mu4zd4edn"
+          "Value": "6hjy9wfwjx"
         },
         {
           "Name": "label",
@@ -70467,12 +70467,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
     {
-      "Route": "project-delivery.4mu4zd4edn.bundle.scp.css",
+      "Route": "project-delivery.6hjy9wfwjx.bundle.scp.css",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\project-delivery.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70482,7 +70482,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5550"
+          "Value": "2622"
         },
         {
           "Name": "Content-Type",
@@ -70490,11 +70490,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70504,7 +70504,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4mu4zd4edn"
+          "Value": "6hjy9wfwjx"
         },
         {
           "Name": "label",
@@ -70512,13 +70512,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
     {
-      "Route": "project-delivery.4mu4zd4edn.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-4mu4zd4edn.gz",
+      "Route": "project-delivery.6hjy9wfwjx.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-6hjy9wfwjx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70527,7 +70527,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "Content-Type",
@@ -70535,11 +70535,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70557,7 +70557,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4mu4zd4edn"
+          "Value": "6hjy9wfwjx"
         },
         {
           "Name": "label",
@@ -70565,18 +70565,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ="
+          "Value": "sha256-KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ="
         }
       ]
     },
     {
-      "Route": "project-delivery.4mu4zd4edn.styles.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-4mu4zd4edn.gz",
+      "Route": "project-delivery.6hjy9wfwjx.styles.css",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-6hjy9wfwjx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000621118012"
+          "Quality": "0.001191895113"
         }
       ],
       "ResponseHeaders": [
@@ -70586,15 +70586,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70614,13 +70614,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "W/\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4mu4zd4edn"
+          "Value": "6hjy9wfwjx"
         },
         {
           "Name": "label",
@@ -70628,12 +70628,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
     {
-      "Route": "project-delivery.4mu4zd4edn.styles.css",
+      "Route": "project-delivery.6hjy9wfwjx.styles.css",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\bundle\\project-delivery.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70643,7 +70643,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5550"
+          "Value": "2622"
         },
         {
           "Name": "Content-Type",
@@ -70651,11 +70651,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70665,7 +70665,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4mu4zd4edn"
+          "Value": "6hjy9wfwjx"
         },
         {
           "Name": "label",
@@ -70673,13 +70673,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
     {
-      "Route": "project-delivery.4mu4zd4edn.styles.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-4mu4zd4edn.gz",
+      "Route": "project-delivery.6hjy9wfwjx.styles.css.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-6hjy9wfwjx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70688,7 +70688,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "Content-Type",
@@ -70696,11 +70696,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70718,7 +70718,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4mu4zd4edn"
+          "Value": "6hjy9wfwjx"
         },
         {
           "Name": "label",
@@ -70726,18 +70726,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ="
+          "Value": "sha256-KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ="
         }
       ]
     },
     {
       "Route": "project-delivery.bundle.scp.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-4mu4zd4edn.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-6hjy9wfwjx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000621118012"
+          "Quality": "0.001191895113"
         }
       ],
       "ResponseHeaders": [
@@ -70747,15 +70747,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70775,13 +70775,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "W/\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
@@ -70796,7 +70796,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5550"
+          "Value": "2622"
         },
         {
           "Name": "Content-Type",
@@ -70804,11 +70804,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70818,13 +70818,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
     {
       "Route": "project-delivery.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-4mu4zd4edn.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\06wircd1j6-6hjy9wfwjx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70833,7 +70833,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "Content-Type",
@@ -70841,11 +70841,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70863,18 +70863,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ="
+          "Value": "sha256-KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ="
         }
       ]
     },
     {
       "Route": "project-delivery.styles.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-4mu4zd4edn.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-6hjy9wfwjx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000621118012"
+          "Quality": "0.001191895113"
         }
       ],
       "ResponseHeaders": [
@@ -70884,15 +70884,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70912,13 +70912,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "W/\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
@@ -70933,7 +70933,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5550"
+          "Value": "2622"
         },
         {
           "Name": "Content-Type",
@@ -70941,11 +70941,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0=\""
+          "Value": "\"5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70955,13 +70955,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/IqbUAJJtssCST/VbWE7joW839PZfWihaqVhuLa2Bo0="
+          "Value": "sha256-5k/bvk7sZeGMegOvSqLd4MqLMIg8oc/ZrGzd213ci2Y="
         }
       ]
     },
     {
       "Route": "project-delivery.styles.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-4mu4zd4edn.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\m3lvykd68e-6hjy9wfwjx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70970,7 +70970,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1609"
+          "Value": "838"
         },
         {
           "Name": "Content-Type",
@@ -70978,11 +70978,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ=\""
+          "Value": "\"KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 17:01:27 GMT"
+          "Value": "Tue, 22 Apr 2025 01:08:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71000,7 +71000,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NqdD5NS6s+0zcXJFfHSloA/klsj4nfUlBl8y0gEpFTQ="
+          "Value": "sha256-KO6+aQ6eg91DdNZkACCnFeW3AF1piuG53RrEWVin7fQ="
         }
       ]
     },
