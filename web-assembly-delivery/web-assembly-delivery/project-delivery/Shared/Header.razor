@@ -1,0 +1,33 @@
+
+
+<!-- Top Navigation Bar -->
+<header class="bg-red-600 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <div class="text-2xl font-bold"><NavLink href="@($"/home")"> iDelivery </NavLink>🍕</div>
+            <div class="hidden md:flex items-center bg-white text-gray-800 rounded-md px-3 py-2 flex-1 max-w-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" placeholder="Busque por item ou loja" class="ml-2 outline-none w-full">
+            </div>
+        </div>
+        <div class="flex items-center space-x-6">
+            <button class="hidden md:flex items-center space-x-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span>Carrinho</span>
+            </button>
+            <button class="bg-white text-red-600 px-4 py-1 rounded-full font-medium">Entrar</button>
+        </div>
+    </div>
+    <div class="md:hidden bg-white text-gray-800 px-4 py-2">
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" placeholder="Busque por item ou loja" class="ml-2 outline-none w-full">
+        </div>
+    </div>
+</header>

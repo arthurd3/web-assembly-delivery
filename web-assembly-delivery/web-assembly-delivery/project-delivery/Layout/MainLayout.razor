@@ -1,0 +1,22 @@
+@page "/"
+@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+
+<PageTitle>Delivery</PageTitle>
+
+<div>
+    <Header /> 
+
+        <main class="bg-gray-50 pb-20">
+            @Body
+        </main>
+        
+    <Navbar />
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Navigation.NavigateTo("/home");
+    }
+}
