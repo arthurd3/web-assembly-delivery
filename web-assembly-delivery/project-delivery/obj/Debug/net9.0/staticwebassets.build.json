@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iwlV3eXEdCXU5HsDdPVyKC3fP5igYj7ekZUbRdfXye0=",
+  "Hash": "E85n9XwwIPr2Lf2SBs3fWtfaMT8h/C8PolwD0WHs0/w=",
   "Source": "project-delivery",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "2tg0a4a86s",
-      "Integrity": "Fs+55MnSKOU8oKVvmEYT1rYrVgBk36eO4zpxaP4jLL8=",
+      "Fingerprint": "4ambwijnjr",
+      "Integrity": "dCK/cgTe4ATkKLpX5/S12fd9irwwnIVRUiME0n1B7iI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -871,8 +871,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "ki2rymtdhu",
-      "Integrity": "fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4=",
+      "Fingerprint": "tcl35h59bs",
+      "Integrity": "I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\project-delivery.pdb"
@@ -892,8 +892,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "4orm6hd63c",
-      "Integrity": "bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY=",
+      "Fingerprint": "9uegayz6yr",
+      "Integrity": "IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\webcil\\project-delivery.wasm"
@@ -5204,7 +5204,7 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.HttpListener.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-2tg0a4a86s.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-4ambwijnjr.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
@@ -5218,8 +5218,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "savv14bzu5",
-      "Integrity": "zK4apaofMQHLkJXiGC4vAIr+qLPCR0oARepk/Rz83kk=",
+      "Fingerprint": "xlik7xptim",
+      "Integrity": "ywm/oH0/OxSb2aRp0W2n+oToySe1shmB26hgvvvU8+Q=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5897,12 +5897,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-4orm6hd63c.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-9uegayz6yr.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/project-delivery#[.{fingerprint=4orm6hd63c}]!.wasm.gz",
+      "RelativePath": "_framework/project-delivery#[.{fingerprint=9uegayz6yr}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5911,8 +5911,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vodkzzhk23",
-      "Integrity": "sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c=",
+      "Fingerprint": "g6gg3h3d7x",
+      "Integrity": "6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm"
@@ -6275,12 +6275,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-ki2rymtdhu.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-tcl35h59bs.gz",
       "SourceId": "project-delivery",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/project-delivery#[.{fingerprint=ki2rymtdhu}]!.pdb.gz",
+      "RelativePath": "_framework/project-delivery#[.{fingerprint=tcl35h59bs}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6289,8 +6289,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jlebxxr9mi",
-      "Integrity": "p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU=",
+      "Fingerprint": "4n4djjfd4l",
+      "Integrity": "wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb"
@@ -7304,12 +7304,12 @@
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Xml.wasm"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-vzof6owswj.gz",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-ne2yyd6x8e.gz",
       "SourceId": "project-delivery",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "css/output#[.{fingerprint=vzof6owswj}]?.css.gz",
+      "RelativePath": "css/output#[.{fingerprint=ne2yyd6x8e}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7318,8 +7318,8 @@
       "RelatedAsset": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5akv7yl5h0",
-      "Integrity": "bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ=",
+      "Fingerprint": "hrquxpypps",
+      "Integrity": "A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css"
@@ -8704,8 +8704,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vzof6owswj",
-      "Integrity": "ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY=",
+      "Fingerprint": "ne2yyd6x8e",
+      "Integrity": "r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\output.css"
@@ -8753,12 +8753,12 @@
       "OriginalItemSpec": "wwwroot\\icon-192.png"
     },
     {
-      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\image\\desktop-background.webp",
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\desktop-background.webp",
       "SourceId": "project-delivery",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "image/desktop-background#[.{fingerprint}]?.webp",
+      "RelativePath": "Images/desktop-background#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8771,7 +8771,238 @@
       "Integrity": "b3HbwAWCvAEwG0rAwYXXojNuZSNxc04k4WKFPkD+a5w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\desktop-background.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\desktop-background.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/foods/burger-hamburger-burger-isolated-on-transparent-background-png#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcbgu4dqnd",
+      "Integrity": "e1uo7+NIq4N3FAzoa+Pt+5dbQwzA0HyRZAcAPQyPfjU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/foods/Glass-Milkshake-PNG-Clipart#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eddxgeof28",
+      "Integrity": "DvaHm7vN/pne8TOsSCJlZDMnQCH3fecVVa6POfSemsI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\pizza_PNG43989.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/foods/pizza_PNG43989#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c2hjfjdvzs",
+      "Integrity": "JAjJTio41OE2187Hd2Ezae8NpSjawPbownStrisatTg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\foods\\pizza_PNG43989.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/foods/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nsnbt6m9p7",
+      "Integrity": "yf1voWIsFgL63SwOpcvQ/KpMBv+tvcHcEcTLGiBmUoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/foods/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "77eh5kegct",
+      "Integrity": "3cjnFvcV5bTFmfOX5Pmkfgyo1ufvOxHynHWjYkVj4y0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/foods/sushi-platter-with-different-types-of-sushi-free-png#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2j4bqete07",
+      "Integrity": "UnIgDMtFIfK1gtcQvIf2hEPls6v1ZmTQAf9A8syAr0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/places/55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "obevnjpudw",
+      "Integrity": "vPLg9P01+ejg0aJ4br8cOHkG5MbhJSpmuZ4Zg8L0Wbw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\baggio-pizzaria-moema.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/places/baggio-pizzaria-moema#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8rjfhdct5e",
+      "Integrity": "xBb4h7IAKJwCErzZtNX/cYpmoOINKlpJNxiVO9W0qhA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\places\\baggio-pizzaria-moema.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\Restaurant-Malola-Burguer-photo.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/places/Restaurant-Malola-Burguer-photo#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "53ei0c7g3z",
+      "Integrity": "L8gmax6AnBjcKcTGCFGijhxLkbODzm+zBaIV2fxumWs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\places\\Restaurant-Malola-Burguer-photo.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\restaurante-garotao-lanches-1024x576.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/places/restaurante-garotao-lanches-1024x576#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y4q0pcya6p",
+      "Integrity": "rnLWWIDQWITzSWUaERunlTk8X3TfOBpFXDgRDGLMHFo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\places\\restaurante-garotao-lanches-1024x576.webp"
+    },
+    {
+      "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\sushi2you.webp",
+      "SourceId": "project-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/places/sushi2you#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h3mlt2n4yj",
+      "Integrity": "HVjdOBMHm1FL1xVkdcHoI97WCkL+sAeT+Byp6r0Y3Eg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\places\\sushi2you.webp"
     },
     {
       "Identity": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\index.html",
@@ -8836,11 +9067,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Fs+55MnSKOU8oKVvmEYT1rYrVgBk36eO4zpxaP4jLL8=\""
+          "Value": "\"dCK/cgTe4ATkKLpX5/S12fd9irwwnIVRUiME0n1B7iI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8850,18 +9081,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fs+55MnSKOU8oKVvmEYT1rYrVgBk36eO4zpxaP4jLL8="
+          "Value": "sha256-dCK/cgTe4ATkKLpX5/S12fd9irwwnIVRUiME0n1B7iI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-2tg0a4a86s.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-4ambwijnjr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081168831"
+          "Quality": "0.000081182010"
         }
       ],
       "ResponseHeaders": [
@@ -8871,15 +9102,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12319"
+          "Value": "12317"
         },
         {
           "Name": "ETag",
-          "Value": "\"zK4apaofMQHLkJXiGC4vAIr+qLPCR0oARepk/Rz83kk=\""
+          "Value": "\"ywm/oH0/OxSb2aRp0W2n+oToySe1shmB26hgvvvU8+Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:14:32 GMT"
+          "Value": "Tue, 22 Apr 2025 14:29:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8899,19 +9130,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Fs+55MnSKOU8oKVvmEYT1rYrVgBk36eO4zpxaP4jLL8=\""
+          "Value": "W/\"dCK/cgTe4ATkKLpX5/S12fd9irwwnIVRUiME0n1B7iI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fs+55MnSKOU8oKVvmEYT1rYrVgBk36eO4zpxaP4jLL8="
+          "Value": "sha256-dCK/cgTe4ATkKLpX5/S12fd9irwwnIVRUiME0n1B7iI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-2tg0a4a86s.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\6q3q1ijmfn-4ambwijnjr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8920,7 +9151,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12319"
+          "Value": "12317"
         },
         {
           "Name": "Content-Type",
@@ -8928,11 +9159,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zK4apaofMQHLkJXiGC4vAIr+qLPCR0oARepk/Rz83kk=\""
+          "Value": "\"ywm/oH0/OxSb2aRp0W2n+oToySe1shmB26hgvvvU8+Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:14:32 GMT"
+          "Value": "Tue, 22 Apr 2025 14:29:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8950,7 +9181,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zK4apaofMQHLkJXiGC4vAIr+qLPCR0oARepk/Rz83kk="
+          "Value": "sha256-ywm/oH0/OxSb2aRp0W2n+oToySe1shmB26hgvvvU8+Q="
         }
       ]
     },
@@ -20416,7 +20647,7 @@
       ]
     },
     {
-      "Route": "_framework/project-delivery.4orm6hd63c.wasm",
+      "Route": "_framework/project-delivery.9uegayz6yr.wasm",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -20426,7 +20657,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "43797"
+          "Value": "45845"
         },
         {
           "Name": "Content-Type",
@@ -20434,11 +20665,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY=\""
+          "Value": "\"IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:53 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20448,7 +20679,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4orm6hd63c"
+          "Value": "9uegayz6yr"
         },
         {
           "Name": "label",
@@ -20456,18 +20687,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY="
+          "Value": "sha256-IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.4orm6hd63c.wasm",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-4orm6hd63c.gz",
+      "Route": "_framework/project-delivery.9uegayz6yr.wasm",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-9uegayz6yr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068700192"
+          "Quality": "0.000066207627"
         }
       ],
       "ResponseHeaders": [
@@ -20477,15 +20708,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14555"
+          "Value": "15103"
         },
         {
           "Name": "ETag",
-          "Value": "\"sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c=\""
+          "Value": "\"6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20505,13 +20736,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY=\""
+          "Value": "W/\"IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4orm6hd63c"
+          "Value": "9uegayz6yr"
         },
         {
           "Name": "label",
@@ -20519,13 +20750,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY="
+          "Value": "sha256-IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.4orm6hd63c.wasm.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-4orm6hd63c.gz",
+      "Route": "_framework/project-delivery.9uegayz6yr.wasm.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-9uegayz6yr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -20534,7 +20765,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14555"
+          "Value": "15103"
         },
         {
           "Name": "Content-Type",
@@ -20542,11 +20773,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c=\""
+          "Value": "\"6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20564,7 +20795,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4orm6hd63c"
+          "Value": "9uegayz6yr"
         },
         {
           "Name": "label",
@@ -20572,12 +20803,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c="
+          "Value": "sha256-6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.ki2rymtdhu.pdb",
+      "Route": "_framework/project-delivery.pdb",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -20587,7 +20818,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "33116"
+          "Value": "33828"
         },
         {
           "Name": "Content-Type",
@@ -20595,40 +20826,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4=\""
+          "Value": "\"I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:53 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:13 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "ki2rymtdhu"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/project-delivery.pdb"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4="
+          "Value": "sha256-I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.ki2rymtdhu.pdb",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-ki2rymtdhu.gz",
+      "Route": "_framework/project-delivery.pdb",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-tcl35h59bs.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000039800995"
+          "Quality": "0.000038806318"
         }
       ],
       "ResponseHeaders": [
@@ -20638,19 +20861,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25124"
+          "Value": "25768"
         },
         {
           "Name": "ETag",
-          "Value": "\"p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU=\""
+          "Value": "\"wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -20666,27 +20889,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4=\""
+          "Value": "W/\"I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "ki2rymtdhu"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/project-delivery.pdb"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4="
+          "Value": "sha256-I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY="
         }
       ]
     },
     {
-      "Route": "_framework/project-delivery.ki2rymtdhu.pdb.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-ki2rymtdhu.gz",
+      "Route": "_framework/project-delivery.pdb.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-tcl35h59bs.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -20695,7 +20910,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25124"
+          "Value": "25768"
         },
         {
           "Name": "Content-Type",
@@ -20703,11 +20918,164 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU=\""
+          "Value": "\"wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/project-delivery.tcl35h59bs.pdb",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 15:15:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tcl35h59bs"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/project-delivery.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/project-delivery.tcl35h59bs.pdb",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-tcl35h59bs.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000038806318"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25768"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tcl35h59bs"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/project-delivery.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I9iRQdKFT+Dv8Ck5UsthZ9ny83vMnVuf28U5ry82nlY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/project-delivery.tcl35h59bs.pdb.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-tcl35h59bs.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20725,7 +21093,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ki2rymtdhu"
+          "Value": "tcl35h59bs"
         },
         {
           "Name": "label",
@@ -20733,144 +21101,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/project-delivery.pdb",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\project-delivery.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "33116"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/project-delivery.pdb",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-ki2rymtdhu.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000039800995"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25124"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fM/7Q861R0k6D1v+d+tE0iauyskKsvnwX/tOAHnjmh4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/project-delivery.pdb.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\f39fbg9na0-ki2rymtdhu.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25124"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-p/NpmozdW/pqLXMqK4sQUCG8jOQBVD58z2izrP6MceU="
+          "Value": "sha256-wKfNxQn/DrZtGrYQOdjNOPxz1CLkehBvGdxFYtSufsM="
         }
       ]
     },
@@ -20885,7 +21116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "43797"
+          "Value": "45845"
         },
         {
           "Name": "Content-Type",
@@ -20893,11 +21124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY=\""
+          "Value": "\"IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:53 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20907,18 +21138,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY="
+          "Value": "sha256-IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ="
         }
       ]
     },
     {
       "Route": "_framework/project-delivery.wasm",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-4orm6hd63c.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-9uegayz6yr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068700192"
+          "Quality": "0.000066207627"
         }
       ],
       "ResponseHeaders": [
@@ -20928,15 +21159,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14555"
+          "Value": "15103"
         },
         {
           "Name": "ETag",
-          "Value": "\"sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c=\""
+          "Value": "\"6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20956,19 +21187,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY=\""
+          "Value": "W/\"IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bNBkhXppcgayPtm4OCvPRk0vVdEgWLZnJ3iNEQ3eTOY="
+          "Value": "sha256-IXHoijhmLopys7pIoS71KauChQpJguqtg785G9UcjFQ="
         }
       ]
     },
     {
       "Route": "_framework/project-delivery.wasm.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-4orm6hd63c.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\bdqnz7k5zy-9uegayz6yr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -20977,7 +21208,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14555"
+          "Value": "15103"
         },
         {
           "Name": "Content-Type",
@@ -20985,11 +21216,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c=\""
+          "Value": "\"6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 13:30:54 GMT"
+          "Value": "Tue, 22 Apr 2025 15:15:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21007,7 +21238,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sf4QWvdfWfzljUDC7VgPqkfFZQYAN9cPsZuRPxfiA0c="
+          "Value": "sha256-6OxeNubJHuN9FN/yvpGZRe/Hjoe6AF/WIoOavAYz7UU="
         }
       ]
     },
@@ -69587,12 +69818,12 @@
     },
     {
       "Route": "css/output.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-vzof6owswj.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-ne2yyd6x8e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000179018976"
+          "Quality": "0.000167392032"
         }
       ],
       "ResponseHeaders": [
@@ -69602,15 +69833,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5585"
+          "Value": "5973"
         },
         {
           "Name": "ETag",
-          "Value": "\"bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ=\""
+          "Value": "\"A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 03:48:57 GMT"
+          "Value": "Tue, 22 Apr 2025 15:09:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69630,13 +69861,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY=\""
+          "Value": "W/\"r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY="
+          "Value": "sha256-r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE="
         }
       ]
     },
@@ -69651,7 +69882,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32190"
+          "Value": "35045"
         },
         {
           "Name": "Content-Type",
@@ -69659,11 +69890,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY=\""
+          "Value": "\"r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 03:48:57 GMT"
+          "Value": "Tue, 22 Apr 2025 15:09:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69673,13 +69904,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY="
+          "Value": "sha256-r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE="
         }
       ]
     },
     {
       "Route": "css/output.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-vzof6owswj.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-ne2yyd6x8e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -69688,7 +69919,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5585"
+          "Value": "5973"
         },
         {
           "Name": "Content-Type",
@@ -69696,11 +69927,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ=\""
+          "Value": "\"A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 03:48:57 GMT"
+          "Value": "Tue, 22 Apr 2025 15:09:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69718,18 +69949,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ="
+          "Value": "sha256-A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY="
         }
       ]
     },
     {
-      "Route": "css/output.vzof6owswj.css",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-vzof6owswj.gz",
+      "Route": "css/output.ne2yyd6x8e.css",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-ne2yyd6x8e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000179018976"
+          "Quality": "0.000167392032"
         }
       ],
       "ResponseHeaders": [
@@ -69739,15 +69970,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5585"
+          "Value": "5973"
         },
         {
           "Name": "ETag",
-          "Value": "\"bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ=\""
+          "Value": "\"A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 03:48:57 GMT"
+          "Value": "Tue, 22 Apr 2025 15:09:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69767,13 +69998,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY=\""
+          "Value": "W/\"r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vzof6owswj"
+          "Value": "ne2yyd6x8e"
         },
         {
           "Name": "label",
@@ -69781,12 +70012,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY="
+          "Value": "sha256-r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE="
         }
       ]
     },
     {
-      "Route": "css/output.vzof6owswj.css",
+      "Route": "css/output.ne2yyd6x8e.css",
       "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -69796,7 +70027,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32190"
+          "Value": "35045"
         },
         {
           "Name": "Content-Type",
@@ -69804,11 +70035,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY=\""
+          "Value": "\"r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 03:48:57 GMT"
+          "Value": "Tue, 22 Apr 2025 15:09:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69818,7 +70049,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vzof6owswj"
+          "Value": "ne2yyd6x8e"
         },
         {
           "Name": "label",
@@ -69826,13 +70057,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ta0O4ai212bJs9HDvzO2wKG9BUtJpIf9kN33HSo0fTY="
+          "Value": "sha256-r5Zq2WLSI2gFwiq9UFtlku6snpKAHOSVUnHMXjMWniE="
         }
       ]
     },
     {
-      "Route": "css/output.vzof6owswj.css.gz",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-vzof6owswj.gz",
+      "Route": "css/output.ne2yyd6x8e.css.gz",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\compressed\\nz77v0vh06-ne2yyd6x8e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -69841,7 +70072,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5585"
+          "Value": "5973"
         },
         {
           "Name": "Content-Type",
@@ -69849,11 +70080,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ=\""
+          "Value": "\"A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 03:48:57 GMT"
+          "Value": "Tue, 22 Apr 2025 15:09:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -69871,7 +70102,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vzof6owswj"
+          "Value": "ne2yyd6x8e"
         },
         {
           "Name": "label",
@@ -69879,7 +70110,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bTfoPtRPoLQao7FPwP87rSllndFYuUwIEA3lOQNVAbQ="
+          "Value": "sha256-A/iEZaVf/0OFF6mri8GbXc0nCcG6nKFD5sxexNtKILY="
         }
       ]
     },
@@ -70048,8 +70279,8 @@
       ]
     },
     {
-      "Route": "image/desktop-background.bl7ohdnzbx.webp",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\image\\desktop-background.webp",
+      "Route": "Images/desktop-background.bl7ohdnzbx.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\desktop-background.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70084,7 +70315,7 @@
         },
         {
           "Name": "label",
-          "Value": "image/desktop-background.webp"
+          "Value": "Images/desktop-background.webp"
         },
         {
           "Name": "integrity",
@@ -70093,8 +70324,8 @@
       ]
     },
     {
-      "Route": "image/desktop-background.webp",
-      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\image\\desktop-background.webp",
+      "Route": "Images/desktop-background.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\desktop-background.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70126,6 +70357,908 @@
         {
           "Name": "integrity",
           "Value": "sha256-b3HbwAWCvAEwG0rAwYXXojNuZSNxc04k4WKFPkD+a5w="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/burger-hamburger-burger-isolated-on-transparent-background-png.rcbgu4dqnd.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e1uo7+NIq4N3FAzoa+Pt+5dbQwzA0HyRZAcAPQyPfjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 13:56:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcbgu4dqnd"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/foods/burger-hamburger-burger-isolated-on-transparent-background-png.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e1uo7+NIq4N3FAzoa+Pt+5dbQwzA0HyRZAcAPQyPfjU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/burger-hamburger-burger-isolated-on-transparent-background-png.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e1uo7+NIq4N3FAzoa+Pt+5dbQwzA0HyRZAcAPQyPfjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 13:56:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e1uo7+NIq4N3FAzoa+Pt+5dbQwzA0HyRZAcAPQyPfjU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/Glass-Milkshake-PNG-Clipart.eddxgeof28.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DvaHm7vN/pne8TOsSCJlZDMnQCH3fecVVa6POfSemsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eddxgeof28"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/foods/Glass-Milkshake-PNG-Clipart.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DvaHm7vN/pne8TOsSCJlZDMnQCH3fecVVa6POfSemsI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/Glass-Milkshake-PNG-Clipart.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DvaHm7vN/pne8TOsSCJlZDMnQCH3fecVVa6POfSemsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DvaHm7vN/pne8TOsSCJlZDMnQCH3fecVVa6POfSemsI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/pizza_PNG43989.c2hjfjdvzs.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\pizza_PNG43989.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JAjJTio41OE2187Hd2Ezae8NpSjawPbownStrisatTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:04:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c2hjfjdvzs"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/foods/pizza_PNG43989.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JAjJTio41OE2187Hd2Ezae8NpSjawPbownStrisatTg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/pizza_PNG43989.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\pizza_PNG43989.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JAjJTio41OE2187Hd2Ezae8NpSjawPbownStrisatTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:04:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JAjJTio41OE2187Hd2Ezae8NpSjawPbownStrisatTg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.nsnbt6m9p7.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yf1voWIsFgL63SwOpcvQ/KpMBv+tvcHcEcTLGiBmUoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:01:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nsnbt6m9p7"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/foods/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yf1voWIsFgL63SwOpcvQ/KpMBv+tvcHcEcTLGiBmUoM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yf1voWIsFgL63SwOpcvQ/KpMBv+tvcHcEcTLGiBmUoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:01:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yf1voWIsFgL63SwOpcvQ/KpMBv+tvcHcEcTLGiBmUoM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.77eh5kegct.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3cjnFvcV5bTFmfOX5Pmkfgyo1ufvOxHynHWjYkVj4y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:00:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "77eh5kegct"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/foods/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3cjnFvcV5bTFmfOX5Pmkfgyo1ufvOxHynHWjYkVj4y0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3cjnFvcV5bTFmfOX5Pmkfgyo1ufvOxHynHWjYkVj4y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:00:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3cjnFvcV5bTFmfOX5Pmkfgyo1ufvOxHynHWjYkVj4y0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/sushi-platter-with-different-types-of-sushi-free-png.2j4bqete07.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UnIgDMtFIfK1gtcQvIf2hEPls6v1ZmTQAf9A8syAr0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 13:59:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2j4bqete07"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/foods/sushi-platter-with-different-types-of-sushi-free-png.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UnIgDMtFIfK1gtcQvIf2hEPls6v1ZmTQAf9A8syAr0c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/foods/sushi-platter-with-different-types-of-sushi-free-png.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UnIgDMtFIfK1gtcQvIf2hEPls6v1ZmTQAf9A8syAr0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 13:59:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UnIgDMtFIfK1gtcQvIf2hEPls6v1ZmTQAf9A8syAr0c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPLg9P01+ejg0aJ4br8cOHkG5MbhJSpmuZ4Zg8L0Wbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:33:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPLg9P01+ejg0aJ4br8cOHkG5MbhJSpmuZ4Zg8L0Wbw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.obevnjpudw.jpg",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPLg9P01+ejg0aJ4br8cOHkG5MbhJSpmuZ4Zg8L0Wbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:33:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "obevnjpudw"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/places/55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPLg9P01+ejg0aJ4br8cOHkG5MbhJSpmuZ4Zg8L0Wbw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/baggio-pizzaria-moema.8rjfhdct5e.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\baggio-pizzaria-moema.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xBb4h7IAKJwCErzZtNX/cYpmoOINKlpJNxiVO9W0qhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8rjfhdct5e"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/places/baggio-pizzaria-moema.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xBb4h7IAKJwCErzZtNX/cYpmoOINKlpJNxiVO9W0qhA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/baggio-pizzaria-moema.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\baggio-pizzaria-moema.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xBb4h7IAKJwCErzZtNX/cYpmoOINKlpJNxiVO9W0qhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xBb4h7IAKJwCErzZtNX/cYpmoOINKlpJNxiVO9W0qhA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/Restaurant-Malola-Burguer-photo.53ei0c7g3z.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\Restaurant-Malola-Burguer-photo.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8gmax6AnBjcKcTGCFGijhxLkbODzm+zBaIV2fxumWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:33:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "53ei0c7g3z"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/places/Restaurant-Malola-Burguer-photo.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8gmax6AnBjcKcTGCFGijhxLkbODzm+zBaIV2fxumWs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/Restaurant-Malola-Burguer-photo.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\Restaurant-Malola-Burguer-photo.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8gmax6AnBjcKcTGCFGijhxLkbODzm+zBaIV2fxumWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:33:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8gmax6AnBjcKcTGCFGijhxLkbODzm+zBaIV2fxumWs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/restaurante-garotao-lanches-1024x576.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\restaurante-garotao-lanches-1024x576.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rnLWWIDQWITzSWUaERunlTk8X3TfOBpFXDgRDGLMHFo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:37:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rnLWWIDQWITzSWUaERunlTk8X3TfOBpFXDgRDGLMHFo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/restaurante-garotao-lanches-1024x576.y4q0pcya6p.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\restaurante-garotao-lanches-1024x576.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rnLWWIDQWITzSWUaERunlTk8X3TfOBpFXDgRDGLMHFo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:37:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y4q0pcya6p"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/places/restaurante-garotao-lanches-1024x576.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rnLWWIDQWITzSWUaERunlTk8X3TfOBpFXDgRDGLMHFo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/sushi2you.h3mlt2n4yj.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\sushi2you.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HVjdOBMHm1FL1xVkdcHoI97WCkL+sAeT+Byp6r0Y3Eg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:36:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h3mlt2n4yj"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/places/sushi2you.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HVjdOBMHm1FL1xVkdcHoI97WCkL+sAeT+Byp6r0Y3Eg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/places/sushi2you.webp",
+      "AssetFile": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\sushi2you.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HVjdOBMHm1FL1xVkdcHoI97WCkL+sAeT+Byp6r0Y3Eg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 14:36:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HVjdOBMHm1FL1xVkdcHoI97WCkL+sAeT+Byp6r0Y3Eg="
         }
       ]
     },

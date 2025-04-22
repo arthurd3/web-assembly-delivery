@@ -7,7 +7,7 @@
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-2xl font-bold mb-6">Categorias</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            @foreach (var category in categories)
+            @foreach (var category in categories.Take(6))
             {
                 <div class="bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition-shadow cursor-pointer">
                     <div class="mx-auto mb-2">
@@ -27,7 +27,7 @@
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            @foreach (var restaurant in restaurants)
+            @foreach (var restaurant in restaurants.Take(4))
             {
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative">
@@ -59,7 +59,7 @@
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-2xl font-bold mb-6">Promoções</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            @foreach (var promo in promotions)
+            @foreach (var promo in promotions.Take(2))
             {
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm">
                     <img src="@promo.Image" alt="@promo.Title" class="w-full h-48 object-cover">
@@ -73,27 +73,33 @@
         </div>
     </div>
 
+    <!-- AllFoods -->
+
+
     @code {
     private List<Category> categories = new()
     {
-        new Category { Name = "Pizza", Icon = "Images/pizza_PNG43989.webp" }, 
-        new Category { Name = "Hambúrguer", Icon = "Images/burger-hamburger-burger-isolated-on-transparent-background-png.webp" },
-        new Category { Name = "Sushi", Icon = "Images/sushi-platter-with-different-types-of-sushi-free-png.webp" },
-        new Category { Name = "Marmita", Icon = "Images/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp" },
-        new Category { Name = "Açaí", Icon = "Images/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp" },
-        new Category { Name = "Bebidas", Icon = "Images/Glass-Milkshake-PNG-Clipart.webp" }
+        new Category { Name = "Pizza", Icon = "Images/foods/pizza_PNG43989.webp" }, 
+        new Category { Name = "Hambúrguer", Icon = "Images/foods/burger-hamburger-burger-isolated-on-transparent-background-png.webp" },
+        new Category { Name = "Sushi", Icon = "Images/foods/sushi-platter-with-different-types-of-sushi-free-png.webp" },
+        new Category { Name = "Marmita", Icon = "Images/foods/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp" },
+        new Category { Name = "Açaí", Icon = "Images/foods/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp" },
+        new Category { Name = "Bebidas", Icon = "Images/foods/Glass-Milkshake-PNG-Clipart.webp" }
     };
 
     private List<Restaurant> restaurants = new()
     {
-        new Restaurant { Name = "Pizzaria Itália", Image = "images/restaurants/pizzaria.jpg", Rating = 4.5, Category = "Pizza", DeliveryTime = 30, DeliveryFee = "R$ 5,00" },
-        new Restaurant { Name = "Burger House", Image = "images/restaurants/burger.jpg", Rating = 4.8, Category = "Hambúrguer", DeliveryTime = 25, DeliveryFee = "Grátis" },
-        new Restaurant { Name = "Sushi Yama", Image = "images/restaurants/sushi.jpg", Rating = 4.6, Category = "Sushi", DeliveryTime = 40, DeliveryFee = "R$ 7,00" }
+        new Restaurant { Name = "Pizzaria Baggio", Image = "Images/places/baggio-pizzaria-moema.webp", Rating = 4.5, Category = "Pizza", DeliveryTime = 30, DeliveryFee = "R$ 5,00" },
+        new Restaurant { Name = "Malola Burguer", Image = "Images/places/Restaurant-Malola-Burguer-photo.webp", Rating = 4.2, Category = "Hambúrguer", DeliveryTime = 25, DeliveryFee = "Grátis💲" },
+        new Restaurant { Name = "Garotao Lanches", Image = "Images/places/restaurante-garotao-lanches-1024x576.webp", Rating = 4.8, Category = "Hambúrguer", DeliveryTime = 25, DeliveryFee = "Grátis💲" },
+        new Restaurant { Name = "Sushi2You", Image = "Images/places/sushi2you.webp", Rating = 4.6, Category = "Sushi", DeliveryTime = 40, DeliveryFee = "R$ 7,00" }
     };
 
     private List<Promotion> promotions = new()
     {
         new Promotion { Title = "50% off em Pizzas", Description = "Aproveite meia pizza por metade do preço", Image = "images/promotions/pizza-promo.jpg" },
+        new Promotion { Title = "Frete grátis no Sushi", Description = "Pedidos acima de R$50", Image = "images/promotions/sushi-promo.jpg" },
+        new Promotion { Title = "Frete grátis no Sushi", Description = "Pedidos acima de R$50", Image = "images/promotions/sushi-promo.jpg" },
         new Promotion { Title = "Frete grátis no Sushi", Description = "Pedidos acima de R$50", Image = "images/promotions/sushi-promo.jpg" }
     };
 
