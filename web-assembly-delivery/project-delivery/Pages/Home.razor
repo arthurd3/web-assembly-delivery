@@ -10,10 +10,10 @@
             @foreach (var category in categories)
             {
                 <div class="bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition-shadow cursor-pointer">
-                    <div class="w-16 h-16 mx-auto mb-2">
-                        <img src="@category.Icon" alt="@category.Name" class="w-full h-full object-contain">
+                    <div class="mx-auto mb-2">
+                        <img src="@category.Icon" alt="@category.Name" class="w-50 h-20 mx-auto object-contain rounded-full ">
                     </div>
-                    <p class="font-medium">@category.Name</p>
+                    <p class="font-bold">@category.Name</p>
                 </div>
             }
         </div>
@@ -76,12 +76,12 @@
     @code {
     private List<Category> categories = new()
     {
-        new Category { Name = "Pizza", Icon = "images/icons/pizza.png" },
-        new Category { Name = "Hambúrguer", Icon = "images/icons/burger.png" },
-        new Category { Name = "Sushi", Icon = "images/icons/sushi.png" },
-        new Category { Name = "Marmita", Icon = "images/icons/meal.png" },
-        new Category { Name = "Açaí", Icon = "images/icons/acai.png" },
-        new Category { Name = "Bebidas", Icon = "images/icons/drinks.png" }
+        new Category { Name = "Pizza", Icon = "Images/pizza_PNG43989.webp" }, 
+        new Category { Name = "Hambúrguer", Icon = "Images/burger-hamburger-burger-isolated-on-transparent-background-png.webp" },
+        new Category { Name = "Sushi", Icon = "Images/sushi-platter-with-different-types-of-sushi-free-png.webp" },
+        new Category { Name = "Marmita", Icon = "Images/serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp" },
+        new Category { Name = "Açaí", Icon = "Images/polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp" },
+        new Category { Name = "Bebidas", Icon = "Images/Glass-Milkshake-PNG-Clipart.webp" }
     };
 
     private List<Restaurant> restaurants = new()
@@ -96,5 +96,5 @@
         new Promotion { Title = "50% off em Pizzas", Description = "Aproveite meia pizza por metade do preço", Image = "images/promotions/pizza-promo.jpg" },
         new Promotion { Title = "Frete grátis no Sushi", Description = "Pedidos acima de R$50", Image = "images/promotions/sushi-promo.jpg" }
     };
-    
+
 }

@@ -3,7 +3,9 @@ enum TypeFood
     Pizza,
     Hamburguer,
     Sushi,
-    Mineira,
+    Marmita,
 
+    Acai,
+    Bebidas
 
 }

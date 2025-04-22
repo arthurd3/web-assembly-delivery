@@ -1029,10 +1029,10 @@ C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-deli
 C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\project-delivery.pdb
 C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\ref\project-delivery.dll
 C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\nz77v0vh06-vzof6owswj.gz
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.ro37lgqczo.pdb
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.tqsbronexg.wasm
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.tqsbronexg.wasm.gz
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.ro37lgqczo.pdb.gz
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\bdqnz7k5zy-tqsbronexg.gz
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\f39fbg9na0-ro37lgqczo.gz
-C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\6q3q1ijmfn-3q90rwyt8i.gz
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.ki2rymtdhu.pdb
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.4orm6hd63c.wasm
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.4orm6hd63c.wasm.gz
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\bin\Debug\net9.0\wwwroot\_framework\project-delivery.ki2rymtdhu.pdb.gz
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\bdqnz7k5zy-4orm6hd63c.gz
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\f39fbg9na0-ki2rymtdhu.gz
+C:\Users\arthurd\Desktop\Projects\webAssembly\web-assembly-delivery\project-delivery\obj\Debug\net9.0\compressed\6q3q1ijmfn-2tg0a4a86s.gz
