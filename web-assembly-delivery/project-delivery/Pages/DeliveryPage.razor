@@ -53,23 +53,20 @@
 
 
 @code {
-    public class Food
+    private List<Food> foods = new()
     {
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string ImageUrl { get; set; } = string.Empty;
-        public double Price { get; set; } = 0;
-    }
-    private List<Food> foods = new List<Food>
-{
+        new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
+        new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"},
+        new Food { Name = "Sushi", Price=50.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://imgs.search.brave.com/_pgC_Or1Q8BMq_gp8sW9OXx55Ra40phvH8IN_bMYzSA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDkx/Njk2MzUwL3B0L2Zv/dG8vcmV0cmF0by1k/ZS11bS12ZXJkYWRl/aXJvLWphcG9uJUMz/JUFBcy1ob21lbS1j/b20tY2FiZWxvLXBy/ZXRvLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz14Mktaa1R3/S0sxTmh4S3NMMS1M/NGRaM3J5YjBKQmdT/Y24wTTdpblo2QVJJ/PQ" },
+        new Food { Name = "Lilfil", Price=4.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://brasil.perfil.com/wp-content/uploads/2022/10/indiano-se-torna-o-mais-jovem-a-vencer-campeao-mundial-de-xadrez.jpg" },
+        new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
+        new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"},
+        new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
+        new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"},
+        new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
+        new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl ="https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"}
+    };
 
-new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl =
-"https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
-new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl =
-"https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"
-},
-new Food { Name = "Sushi", Price=50.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://imgs.search.brave.com/_pgC_Or1Q8BMq_gp8sW9OXx55Ra40phvH8IN_bMYzSA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDkx/Njk2MzUwL3B0L2Zv/dG8vcmV0cmF0by1k/ZS11bS12ZXJkYWRl/aXJvLWphcG9uJUMz/JUFBcy1ob21lbS1j/b20tY2FiZWxvLXBy/ZXRvLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz14Mktaa1R3/S0sxTmh4S3NMMS1M/NGRaM3J5YjBKQmdT/Y24wTTdpblo2QVJJ/PQ" },
-new Food { Name = "Lilfil", Price=4.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://brasil.perfil.com/wp-content/uploads/2022/10/indiano-se-torna-o-mais-jovem-a-vencer-campeao-mundial-de-xadrez.jpg" }
+
 };
 
-}
