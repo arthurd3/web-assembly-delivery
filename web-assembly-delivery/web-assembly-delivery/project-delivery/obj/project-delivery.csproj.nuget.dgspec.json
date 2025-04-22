@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembly\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {}
+    "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembly\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {
+    "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembly\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
+        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
         "projectName": "project-delivery",
-        "projectPath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembly\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
+        "projectPath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
         "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembly\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\obj\\",
+        "outputPath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xm86QbU/fDM=",
+  "dgSpecHash": "vVFC+Z0ugX8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembly\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
+  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Filipe\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.4\\microsoft.aspnetcore.authorization.9.0.4.nupkg.sha512",
     "C:\\Users\\Filipe\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.4\\microsoft.aspnetcore.components.9.0.4.nupkg.sha512",

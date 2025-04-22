@@ -1,79 +1,79 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\desktop-background.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\desktop-background.webp",
       "PackagePath": "staticwebassets\\Images\\desktop-background.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp",
       "PackagePath": "staticwebassets\\Images\\foods\\Glass-Milkshake-PNG-Clipart.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp",
       "PackagePath": "staticwebassets\\Images\\foods\\burger-hamburger-burger-isolated-on-transparent-background-png.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\pizza_PNG43989.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\pizza_PNG43989.webp",
       "PackagePath": "staticwebassets\\Images\\foods\\pizza_PNG43989.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp",
       "PackagePath": "staticwebassets\\Images\\foods\\polpa-norte-acai-b00079bedbd4e7ad11df08f4c8ff97059711.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp",
       "PackagePath": "staticwebassets\\Images\\foods\\serene-artistic-portable-meal-kit-eco-friendly-lunch-box-with-coffee-4k-png.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp",
       "PackagePath": "staticwebassets\\Images\\foods\\sushi-platter-with-different-types-of-sushi-free-png.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg",
       "PackagePath": "staticwebassets\\Images\\places\\55245735_gqApyA9BQUWqz4QBEvV3i7mereIdKtGRcELfhgxTo4s.jpg"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\Restaurant-Malola-Burguer-photo.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\Restaurant-Malola-Burguer-photo.webp",
       "PackagePath": "staticwebassets\\Images\\places\\Restaurant-Malola-Burguer-photo.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\baggio-pizzaria-moema.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\baggio-pizzaria-moema.webp",
       "PackagePath": "staticwebassets\\Images\\places\\baggio-pizzaria-moema.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\restaurante-garotao-lanches-1024x576.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\restaurante-garotao-lanches-1024x576.webp",
       "PackagePath": "staticwebassets\\Images\\places\\restaurante-garotao-lanches-1024x576.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\sushi2you.webp",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\Images\\places\\sushi2you.webp",
       "PackagePath": "staticwebassets\\Images\\places\\sushi2you.webp"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\input.css",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\input.css",
       "PackagePath": "staticwebassets\\css\\input.css"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\output.css",
       "PackagePath": "staticwebassets\\css\\output.css"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\Filipe\\Desktop\\trabalhos\\web-assembley\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
