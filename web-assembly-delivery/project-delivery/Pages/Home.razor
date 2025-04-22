@@ -1,78 +1,122 @@
-﻿@page "/"
+@page "/home"
 
-<PageTitle>Home</PageTitle>
+@inherits LayoutComponentBase
 
-<div class="text-center text-2xl font-semibold text-blue-600 mt-6 mb-4 p-2 bg-gray-21 rounded-md shadow-sm" style="font-family: 'Poppins', sans-serif;">
-    Qual o pedido da vez 🍕 ?
-</div>
-
-
-
-
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-4">
-    @foreach (var food in foods)
-    {
-        <div
-            class="w-full bg-white border border-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
-            <div class="relative">
-                <img class="w-full h-48 object-cover" src="@food.ImageUrl" alt="@food.Name" />
-                <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    5.0
+<PageTitle>HomePage</PageTitle>
+    <!-- Categories -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6">Categorias</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            @foreach (var category in categories)
+            {
+                <div class="bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-2">
+                        <img src="@category.Icon" alt="@category.Name" class="w-full h-full object-contain">
+                    </div>
+                    <p class="font-medium">@category.Name</p>
                 </div>
-            </div>
-            <div class="p-4">
-                <h3 class="text-lg font-bold text-gray-800 mb-1">@food.Name</h3>
-                <p class="text-sm text-gray-600 mb-3">@food.Description</p>
+            }
+        </div>
+    </div>
 
-                <div class="flex items-center mb-3">
-                    <div class="flex text-yellow-400">
-                        @for (int i = 0; i < 4; i++)
-                        {
-                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+    <!-- Restaurants -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Restaurantes</h2>
+            <a href="#" class="text-red-600 font-medium">Ver todos</a>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            @foreach (var restaurant in restaurants)
+            {
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative">
+                        <img src="@restaurant.Image" alt="@restaurant.Name" class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-white rounded-full px-2 py-1 flex items-center text-xs font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                        }
-                        <svg class="w-4 h-4 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 22 20">
-                            <path
-                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                        </svg>
+                            <span class="ml-1">@restaurant.Rating.ToString("0.0")</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">@restaurant.Name</h3>
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <span>@restaurant.Category</span>
+                            <span class="mx-2">•</span>
+                            <span>@restaurant.DeliveryTime min</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-600">@restaurant.DeliveryFee</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="flex items-center justify-between">
-                    <span class="text-xl font-bold text-orange-600">R$@food.Price.ToString("N2")</span>
-                    <button
-                        class="bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg text-sm px-4 py-2 transition-colors duration-300">
-                        Pedir agora
-                    </button>
-                </div>
-            </div>
+            }
         </div>
-    }
-</div>
+    </div>
 
+    <!-- Promotions -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6">Promoções</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            @foreach (var promo in promotions)
+            {
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <img src="@promo.Image" alt="@promo.Title" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">@promo.Title</h3>
+                        <p class="text-gray-600 mb-4">@promo.Description</p>
+                        <button class="text-red-600 font-medium">Ver oferta</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
 
-@code {
-    public class Food
+    @code {
+    private List<Category> categories = new()
     {
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string ImageUrl { get; set; } = string.Empty;
-        public double Price { get; set; } = 0;
+        new Category { Name = "Pizza", Icon = "images/icons/pizza.png" },
+        new Category { Name = "Hambúrguer", Icon = "images/icons/burger.png" },
+        new Category { Name = "Sushi", Icon = "images/icons/sushi.png" },
+        new Category { Name = "Marmita", Icon = "images/icons/meal.png" },
+        new Category { Name = "Açaí", Icon = "images/icons/acai.png" },
+        new Category { Name = "Bebidas", Icon = "images/icons/drinks.png" }
+    };
+
+    private List<Restaurant> restaurants = new()
+    {
+        new Restaurant { Name = "Pizzaria Itália", Image = "images/restaurants/pizzaria.jpg", Rating = 4.5, Category = "Pizza", DeliveryTime = 30, DeliveryFee = "R$ 5,00" },
+        new Restaurant { Name = "Burger House", Image = "images/restaurants/burger.jpg", Rating = 4.8, Category = "Hambúrguer", DeliveryTime = 25, DeliveryFee = "Grátis" },
+        new Restaurant { Name = "Sushi Yama", Image = "images/restaurants/sushi.jpg", Rating = 4.6, Category = "Sushi", DeliveryTime = 40, DeliveryFee = "R$ 7,00" }
+    };
+
+    private List<Promotion> promotions = new()
+    {
+        new Promotion { Title = "50% off em Pizzas", Description = "Aproveite meia pizza por metade do preço", Image = "images/promotions/pizza-promo.jpg" },
+        new Promotion { Title = "Frete grátis no Sushi", Description = "Pedidos acima de R$50", Image = "images/promotions/sushi-promo.jpg" }
+    };
+
+    public class Category
+    {
+        public string Name { get; set; }
+        public string Icon { get; set; }
     }
-    private List<Food> foods = new List<Food>
-{
 
-new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl =
-"https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
-new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl =
-"https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"
-},
-new Food { Name = "Sushi", Price=50.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://imgs.search.brave.com/_pgC_Or1Q8BMq_gp8sW9OXx55Ra40phvH8IN_bMYzSA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDkx/Njk2MzUwL3B0L2Zv/dG8vcmV0cmF0by1k/ZS11bS12ZXJkYWRl/aXJvLWphcG9uJUMz/JUFBcy1ob21lbS1j/b20tY2FiZWxvLXBy/ZXRvLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz14Mktaa1R3/S0sxTmh4S3NMMS1M/NGRaM3J5YjBKQmdT/Y24wTTdpblo2QVJJ/PQ" },
-new Food { Name = "Lilfil", Price=4.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://brasil.perfil.com/wp-content/uploads/2022/10/indiano-se-torna-o-mais-jovem-a-vencer-campeao-mundial-de-xadrez.jpg" }
-};
+    public class Restaurant
+    {
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public double Rating { get; set; }
+        public string Category { get; set; }
+        public int DeliveryTime { get; set; }
+        public string DeliveryFee { get; set; }
+    }
 
+    public class Promotion
+    {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
+    }
 }

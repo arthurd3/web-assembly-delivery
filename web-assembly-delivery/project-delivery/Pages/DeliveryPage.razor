@@ -1,0 +1,75 @@
+﻿@page "/all-foods-page"
+
+<PageTitle>DeliveryPage</PageTitle>
+
+<div class="text-center text-2xl font-semibold text-blue-600 mt-6 mb-4 p-2 bg-gray-21 rounded-md shadow-sm" style="font-family: 'Poppins', sans-serif;">
+    Qual o pedido da vez 🍕 ?
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-4">
+    @foreach (var food in foods)
+    {
+        <div
+            class="w-full bg-white border border-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+            <div class="relative">
+                <img class="w-full h-48 object-cover" src="@food.ImageUrl" alt="@food.Name" />
+                <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                    5.0
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800 mb-1">@food.Name</h3>
+                <p class="text-sm text-gray-600 mb-3">@food.Description</p>
+
+                <div class="flex items-center mb-3">
+                    <div class="flex text-yellow-400">
+                        @for (int i = 0; i < 4; i++)
+                        {
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                        }
+                        <svg class="w-4 h-4 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-xl font-bold text-orange-600">R$@food.Price.ToString("N2")</span>
+                    <button
+                        class="bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg text-sm px-4 py-2 transition-colors duration-300">
+                        Pedir agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {
+    public class Food
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
+        public double Price { get; set; } = 0;
+    }
+    private List<Food> foods = new List<Food>
+{
+
+new Food { Name = "Pizza", Price=50.70 , Description = "Pizza Rechada com caputiry" , ImageUrl =
+"https://imgs.search.brave.com/pVOxl6h5rJTyFNB5osu_G8pNEPZGtHez8KM3vzGVUwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkxL1Bp/enphLTMwMDczOTUu/anBnLzUxMnB4LVBp/enphLTMwMDczOTUu/anBn"},
+new Food { Name = "Hambúrguer",Price=50.30, Description = "Pizza Rechada com caputiry" , ImageUrl =
+"https://imgs.search.brave.com/xMBL0QeuIXT1KLKiMSObqVmFhiHKjJcLVD8QlYkjqvI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXJh/cHJldGEudnRleGFz/c2V0cy5jb20vYXJx/dWl2b3MvaWRzLzE1/NTUzMy04MDAtYXV0/bz92PTYzODU1MjA5/MDUzODgwMDAwMCZ3/aWR0aD04MDAmaGVp/Z2h0PWF1dG8mYXNw/ZWN0PXRydWU"
+},
+new Food { Name = "Sushi", Price=50.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://imgs.search.brave.com/_pgC_Or1Q8BMq_gp8sW9OXx55Ra40phvH8IN_bMYzSA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDkx/Njk2MzUwL3B0L2Zv/dG8vcmV0cmF0by1k/ZS11bS12ZXJkYWRl/aXJvLWphcG9uJUMz/JUFBcy1ob21lbS1j/b20tY2FiZWxvLXBy/ZXRvLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz14Mktaa1R3/S0sxTmh4S3NMMS1M/NGRaM3J5YjBKQmdT/Y24wTTdpblo2QVJJ/PQ" },
+new Food { Name = "Lilfil", Price=4.40 , Description = "Pizza Rechada com caputiry" , ImageUrl = "https://brasil.perfil.com/wp-content/uploads/2022/10/indiano-se-torna-o-mais-jovem-a-vencer-campeao-mundial-de-xadrez.jpg" }
+};
+
+}

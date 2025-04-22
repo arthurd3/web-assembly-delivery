@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\obj\\Debug\\net9.0\\scopedcss\\bundle\\project-delivery.styles.css",
-      "PackagePath": "staticwebassets\\project-delivery.styles.css"
-    },
-    {
       "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\css\\input.css",
       "PackagePath": "staticwebassets\\css\\input.css"
     },
@@ -23,6 +19,10 @@
     {
       "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\image\\desktop-background.webp",
+      "PackagePath": "staticwebassets\\image\\desktop-background.webp"
     },
     {
       "Id": "C:\\Users\\arthurd\\Desktop\\Projects\\webAssembly\\web-assembly-delivery\\project-delivery\\wwwroot\\index.html",
