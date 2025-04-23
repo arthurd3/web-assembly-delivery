@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filipe\\Desktop\\trabalhos\\Delivery\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {}
+    "C:\\Users\\arthurd\\Desktop\\Projects\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filipe\\Desktop\\trabalhos\\Delivery\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {
+    "C:\\Users\\arthurd\\Desktop\\Projects\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\trabalhos\\Delivery\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
+        "projectUniqueName": "C:\\Users\\arthurd\\Desktop\\Projects\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
         "projectName": "project-delivery",
-        "projectPath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\Delivery\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
-        "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filipe\\Desktop\\trabalhos\\Delivery\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\obj\\",
+        "projectPath": "C:\\Users\\arthurd\\Desktop\\Projects\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\project-delivery.csproj",
+        "packagesPath": "C:\\Users\\arthurd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arthurd\\Desktop\\Projects\\web-assembly-delivery\\web-assembly-delivery\\web-assembly-delivery\\project-delivery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\arthurd\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -56,13 +56,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.1, )",
+              "version": "[9.0.4, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.1, )",
+              "version": "[9.0.4, )",
               "autoReferenced": true
             }
           },
@@ -80,7 +80,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[9.0.1, 9.0.1]"
+              "version": "[9.0.4, 9.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
