@@ -2,7 +2,7 @@
 
 @inherits LayoutComponentBase
 
-<PageTitle>HomePage</PageTitle>
+<PageTitle>Delivery de Comida , Estabelecimentos e Ferramentas</PageTitle>
     <!-- Categories -->
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-2xl font-bold mb-6">Categorias</h2>
@@ -27,7 +27,7 @@
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            @foreach (var restaurant in restaurants.Take(4))
+            @foreach (var restaurant in restaurants.OrderBy(r => Guid.NewGuid()).Take(4))
             {
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative">
@@ -55,6 +55,7 @@
         </div>
     </div>
 
+    
     <!-- Promotions -->
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-2xl font-bold mb-6">Promoções</h2>
@@ -75,7 +76,7 @@
 
     <!-- AllFoods -->
 
-
+    
     @code {
     private List<Category> categories = new()
     {
@@ -87,13 +88,21 @@
         new Category { Name = "Bebidas", Icon = "Images/foods/Glass-Milkshake-PNG-Clipart.webp" }
     };
 
+    
+    
     private List<Restaurant> restaurants = new()
     {
         new Restaurant { Name = "Pizzaria Baggio", Image = "Images/places/baggio-pizzaria-moema.webp", Rating = 4.5, Category = "Pizza", DeliveryTime = 30, DeliveryFee = "R$ 5,00" },
         new Restaurant { Name = "Malola Burguer", Image = "Images/places/Restaurant-Malola-Burguer-photo.webp", Rating = 4.2, Category = "Hambúrguer", DeliveryTime = 25, DeliveryFee = "Grátis💲" },
         new Restaurant { Name = "Garotao Lanches", Image = "Images/places/restaurante-garotao-lanches-1024x576.webp", Rating = 4.8, Category = "Hambúrguer", DeliveryTime = 25, DeliveryFee = "Grátis💲" },
-        new Restaurant { Name = "Sushi2You", Image = "Images/places/sushi2you.webp", Rating = 4.6, Category = "Sushi", DeliveryTime = 40, DeliveryFee = "R$ 7,00" }
+        new Restaurant { Name = "Sushi2You", Image = "Images/places/sushi2you.webp", Rating = 4.6, Category = "Sushi", DeliveryTime = 40, DeliveryFee = "R$ 7,00" },
+        new Restaurant { Name = "Madeiro", Image = "Images/places/MADERO JUIZ DE FORA - 01.jpg", Rating = 4.6, Category = "Hambúrguer", DeliveryTime = 40, DeliveryFee = "R$ 7,00" },
+        new Restaurant { Name = "Ludicos Sabor", Image = "Images/places/ludicos.jpg", Rating = 4.6, Category = "Lanchonete", DeliveryTime = 40, DeliveryFee = "R$ 7,00" },
+        new Restaurant { Name = "McDonald's", Image = "Images/places/bents.jpg", Rating = 4.6, Category = "Sushi", DeliveryTime = 40, DeliveryFee = "R$ 7,00" }
+
     };
+    
+    
 
     private List<Promotion> promotions = new()
     {

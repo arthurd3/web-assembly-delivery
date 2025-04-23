@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project-delivery</title>
     <base href="/" />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="pizza.png" />
+    <link rel="icon" type="image/png" href="Images/icon/pizza.png" />
     <link href="project-delivery.styles.css" rel="stylesheet" />
     <link href="css/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +20,20 @@
 
 </head>
 
-<body bgcolor="#f4f8f9">
+<body class="bg-[#f4f8f9] font-['Poppins']">
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+        <div class="flex items-center justify-center min-h-screen bg-[#f4f8f9]">
+            <div class="text-center animate-pulse">
+                <img src="Images/loadingpage.gif" alt="Loading Icon" class="w-24 h-24 mx-auto mb-6" />
+                <h1 class="text-2xl font-bold text-gray-800">Carregando seu pedido...</h1>
+                <p class="text-gray-500 mt-2">Estamos preparando tudo com muito carinho 🍕</p>
+                <div class="mt-6 flex justify-center">
+                    <div class="w-16 h-16 border-4 border-dashed rounded-full border-yellow-400 animate-spin"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
 
