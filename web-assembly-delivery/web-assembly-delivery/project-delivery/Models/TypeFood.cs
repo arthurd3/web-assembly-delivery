@@ -1,11 +1,14 @@
-enum TypeFood
+namespace project_delivery.Models
 {
-    Pizza,
-    Hamburguer,
-    Sushi,
-    Marmita,
+    enum TypeFood
+    {
+        Pizza,
+        Hamburguer,
+        Sushi,
+        Marmita,
+        Acai,
+        Bebidas,
 
-    Acai,
-    Bebidas
+    }
 
 }
