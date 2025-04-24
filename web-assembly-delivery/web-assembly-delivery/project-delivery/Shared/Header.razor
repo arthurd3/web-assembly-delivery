@@ -1,4 +1,5 @@
-
+@inject IJSRuntime JSRuntime
+@implements IDisposable
 
 <!-- Top Navigation Bar -->
 <header class="bg-red-600 text-white sticky top-0 z-50 shadow-md">
@@ -13,11 +14,23 @@
             </div>
         </div>
         <div class="flex items-center space-x-6">
-            <button class="hidden md:flex items-center space-x-1">
+            <button class="hidden md:flex items-center space-x-1" @onclick="ToggleCart">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
-                <span>Carrinho</span>
+                
+                    
+                    <button class=" btn relative text-white inline-flex items-center justify-start overflow-hidden cursor-pointer font-medium transition-all bg-white-100 rounded hover:bg-white group py-1.5 px-2.5">
+                    <span class="w-56 h-48 rounded bg-red-600 absolute bottom-0 left-0 translate-x-full ease-out cursor-pointer duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                    <span class="relative w-full text-left text-white-600 transition-colors duration-300 ease-in-out group-hover:text-red cursor-pointer">Carrinho</span>
+                    </button>
+                    @if (CartItems.Count > 0)
+                    {
+                        <span class="bg-white text-red-600 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">
+                            @CartItems.Count
+                        </span>
+                    }
+
             </button>
             <button class="bg-white text-red-600 px-4 py-1 rounded-full font-medium">Entrar</button>
         </div>
@@ -31,3 +44,189 @@
         </div>
     </div>
 </header>
+
+<!-- Cart Modal -->
+@if (IsCartOpen)
+{
+    <div class="fixed inset-0 z-50 overflow-hidden">
+        <!-- Bloqueia o scroll do body -->
+        <style>
+            body {
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <!-- Background overlay - agora bloqueia interações -->
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" 
+             aria-hidden="true"
+             @onclick="ToggleCart"></div>
+
+        <!-- Modal content -->
+        <div class="fixed inset-0 overflow-y-auto">
+            <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                    <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <div class="flex justify-between items-center border-b pb-3">
+                            <h3 class="leading-6 font-medium text-gray-900">
+                                Seu Carrinho
+                            </h3>
+                            <button @onclick="ToggleCart" class="cursor-pointer text-gray-500 hover:text-gray-700 focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="mt-4 max-h-96 overflow-y-auto">
+                            @if (CartItems.Count == 0)
+                            {
+                                <div class="text-center py-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                    <h4 class="mt-2 text-lg font-medium text-gray-900">Seu carrinho está vazio</h4>
+                                    <p class="mt-1 text-gray-500">Adicione itens para continuar</p>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="space-y-5">
+                                    @foreach (var item in CartItems)
+                                    {
+                                        <div class="flex items-center border-b pb-4 group hover:bg-gray-50 transition-colors duration-200 rounded-lg p-2">
+                                            <img src="@item.ImageUrl" alt="@item.Name" class="w-16 h-16 object-cover rounded-md">
+                                            <div class="ml-4 flex-1">
+                                                <h4 class="font-medium transition-colors duration-200">@item.Name</h4>
+                                                <p class="text-gray-500 text-sm">@item.Description</p>
+                                                <div class="flex items-center mt-1">
+                                                    <button class="cursor-pointer hover:text-red-600" @onclick="() => UpdateQuantity(item, -1)" 
+                                                            
+                                                            @onclick:stopPropagation>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                                                        </svg>
+                                                    </button>
+                                                    <span class="mx-3 p-2">@item.Quantity</span>
+                                                    <button class="cursor-pointer hover:text-red-600 focus:outline-none" @onclick="() => UpdateQuantity(item, 1)" 
+                                                            
+                                                            @onclick:stopPropagation>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="text-right">
+                                                <p class="font-medium">R$ @((item.Price * item.Quantity).ToString("N2"))</p>
+                                                <button class="text-red-600 text-sm mt-1 hover:text-red-1000 focus:outline-none cursor-pointer" @onclick="() => RemoveItem(item)" 
+                                                        
+                                                        @onclick:stopPropagation>
+                                                    Remover
+                                                </button>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    @if (CartItems.Count > 0)
+                    {
+                        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                            <div class="w-full">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-600">Subtotal:</span>
+                                    <span class="font-medium">R$ @CartTotal.ToString("N2")</span>
+                                </div>
+                                <div class="flex justify-between mb-4">
+                                    <span class="text-gray-600">Taxa de entrega:</span>
+                                    <span class="font-medium">R$ 5,00</span>
+                                </div>
+                                <div class="flex justify-between border-t pt-2">
+                                    <span class="font-bold">Total:</span>
+                                    <span class="font-bold text-red-600">R$ @((CartTotal + 5.00).ToString("N2"))</span>
+                                </div>
+                                <button class="mt-4 w-full bg-red-600 text-white py-2 px-4 rounded-md font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors duration-200 cursor-pointer">
+                                    Finalizar Pedido
+                                </button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private bool IsCartOpen = false;
+    private List<CartItem> CartItems = new List<CartItem>();
+    private double CartTotal => CartItems.Sum(item => item.Price * item.Quantity);
+
+    protected override void OnInitialized()
+    {
+        CartItems = new List<CartItem>
+        {
+            new CartItem
+            {
+                Id = 1,
+                Name = "Pizza Margherita",
+                Description = "Molho de tomate, mussarela e manjericão",
+                ImageUrl = "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                Price = 700.00,
+                Quantity = 1
+            },
+            new CartItem
+            {
+                Id = 2,
+                Name = "Hambúrguer Artesanal",
+                Description = "Pão brioche, carne 180g, queijo e bacon",
+                ImageUrl = "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                Price = 24.90,
+                Quantity = 2
+            }
+        };
+    }
+
+    private void ToggleCart()
+    {
+        IsCartOpen = !IsCartOpen;
+    }
+
+    private void UpdateQuantity(CartItem item, int change)
+    {
+        var newQuantity = item.Quantity + change;
+        if (newQuantity < 1)
+        {
+            RemoveItem(item);
+            return;
+        }
+
+        item.Quantity = newQuantity;
+    }
+
+    private void RemoveItem(CartItem item)
+    {
+        CartItems.Remove(item);
+    }
+
+    public void Dispose()
+    {
+        // Remove o estilo que bloqueia o scroll quando o componente é destruído
+        if (IsCartOpen)
+        {
+            var js = $"document.body.style.overflow = ''; document.body.style.position = '';";
+            JSRuntime.InvokeVoidAsync("eval", js);
+        }
+    }
+
+    private class CartItem : FoodItem
+    {
+        public int Id { get; set; }
+        public int Quantity { get; set; }
+    }
+}
