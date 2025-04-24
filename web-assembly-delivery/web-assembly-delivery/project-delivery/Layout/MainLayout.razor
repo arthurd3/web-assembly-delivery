@@ -5,13 +5,18 @@
 <PageTitle>Delivery</PageTitle>
 
 <div>
+    
     <Header /> 
 
-        <main class="bg-gray-50 pb-20">
+        <main class="custom-bg">
             @Body
         </main>
-        
-    <Navbar />
+    @if(!Header.isOpen()){
+        <Navbar />
+    }
+    
+    
+    
 </div>
 
 @code {
@@ -20,3 +25,10 @@
         Navigation.NavigateTo("/home");
     }
 }
+
+<style>
+    .custom-bg {
+    background-color: #e6ddddc0; /* Cinza claro */
+    padding-bottom: 2.5rem; /* Isso representa o "pb-10" */
+    }   
+</style>
