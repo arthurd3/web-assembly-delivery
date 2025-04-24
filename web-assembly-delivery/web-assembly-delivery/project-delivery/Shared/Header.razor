@@ -164,32 +164,30 @@
 
 @code {
     private bool IsCartOpen = false;
-    private List<CartItem> CartItems = new List<CartItem>();
+    private List<FoodCart> CartItems = CartService.CartItems;
     private double CartTotal => CartItems.Sum(item => item.Price * item.Quantity);
 
     protected override void OnInitialized()
     {
-        CartItems = new List<CartItem>
+        CartItems.Add(new FoodCart
         {
-            new CartItem
-            {
-                Id = 1,
-                Name = "Pizza Margherita",
-                Description = "Molho de tomate, mussarela e manjericão",
-                ImageUrl = "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-                Price = 700.00,
-                Quantity = 1
-            },
-            new CartItem
-            {
-                Id = 2,
-                Name = "Hambúrguer Artesanal",
-                Description = "Pão brioche, carne 180g, queijo e bacon",
-                ImageUrl = "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-                Price = 24.90,
-                Quantity = 2
-            }
-        };
+            Id = 1,
+            Name = "Pizza Margherita",
+            Description = "Molho de tomate, mussarela e manjericão",
+            ImageUrl = "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            Price = 700.00,
+            Quantity = 1
+        });
+
+        CartItems.Add(new FoodCart
+        {
+            Id = 2,
+            Name = "Hambúrguer Artesanal",
+            Description = "Pão brioche, carne 180g, queijo e bacon",
+            ImageUrl = "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            Price = 24.90,
+            Quantity = 2
+        });
     }
 
     private void ToggleCart()
@@ -197,7 +195,7 @@
         IsCartOpen = !IsCartOpen;
     }
 
-    private void UpdateQuantity(CartItem item, int change)
+    private void UpdateQuantity(FoodCart item, int change)
     {
         var newQuantity = item.Quantity + change;
         if (newQuantity < 1)
@@ -209,7 +207,7 @@
         item.Quantity = newQuantity;
     }
 
-    private void RemoveItem(CartItem item)
+    private void RemoveItem(FoodCart item)
     {
         CartItems.Remove(item);
     }
@@ -224,9 +222,7 @@
         }
     }
 
-    private class CartItem : FoodItem
-    {
-        public int Id { get; set; }
-        public int Quantity { get; set; }
+    public void updateState(){
+        StateHasChanged();
     }
 }

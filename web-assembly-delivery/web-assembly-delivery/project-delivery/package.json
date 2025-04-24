@@ -5,7 +5,7 @@
     "tailwindcss": "^4.1.4"
   },
   "scripts": {
-    "dev": "dotnet restore && npx @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/output.css --watch",
+    "dev": "npm install && dotnet restore && npx @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/output.css --watch",
     "restore": "dotnet restore"
   }
 }
