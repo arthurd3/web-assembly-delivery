@@ -16,7 +16,6 @@ namespace project_delivery.Service
                 item.Quantity++;
                 return true;
             }
-            
             else
             {
                 CartItems.Add(new FoodCart
