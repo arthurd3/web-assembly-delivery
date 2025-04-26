@@ -1,20 +1,21 @@
+using project_delivery.Models;
+using project_delivery.Shared;
+
 namespace project_delivery.Service
 {
 
-    using System.Collections.Generic;
-    using project_delivery.Models;
-
     public class CartService
     {
-        public static List<FoodCart> CartItems { get; private set; } = new();
+        public event Action? OnChange;
+        public List<FoodCart> CartItems { get; private set; } = new();
 
-        public static bool AddToCart(Food food)
+        public bool AddToCart(Food food)
         {
             var item = CartItems.FirstOrDefault(i => i.Id == food.Id);
             if (item != null)
             {
                 item.Quantity++;
-                return true;
+                
             }
             else
             {
@@ -27,10 +28,13 @@ namespace project_delivery.Service
                     Price = food.Price,
                     Quantity = 1
                 });
-                return true;
+                
             }
-        }
+            NotifyStateChanged();
+            return  true;
 
+        }
+        private void NotifyStateChanged() => OnChange?.Invoke();
         public void RemoveFromCart(FoodCart item) => CartItems.Remove(item);
 
         public double GetTotal() => CartItems.Sum(i => i.Price * i.Quantity);

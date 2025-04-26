@@ -1,6 +1,6 @@
 ﻿@page "/all-foods-page"
 @inject DeliveryService deliveryService
-
+@inject CartService cartService
 
 <PageTitle>Delivery Page</PageTitle>
 
@@ -78,7 +78,7 @@
     }
 
     public void sendToCart(Food food){
-        CartService.AddToCart(food);
+        cartService.AddToCart(food);
     }
 
     protected override void OnInitialized()
@@ -86,6 +86,7 @@
         foods = deliveryService.GetFoods();
         h2Food = deliveryService.GetH2();
         typeFoods = deliveryService.getTypeFoods();
+
     }
 
 }
