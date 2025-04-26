@@ -1,5 +1,7 @@
 @page "/home"
 @inject HomeService homeService
+@inject CartService cartService
+@inject DeliveryService deliveryService
 @inherits LayoutComponentBase
 
 <PageTitle>Delivery de Comida , Estabelecimentos e Ferramentas</PageTitle>
@@ -76,6 +78,44 @@
     </div>
 
     <!-- AllFoods -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Comidas</h2>
+            <a href="/delivery-page" class="text-red-600 font-medium">Ver todos</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            @foreach (var food in foods.OrderBy(r => Guid.NewGuid()).Take(12))
+            {
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer" @onclick="() => AddFoodToCart(food)">
+                    <div class="relative">
+                        <img src="@food.ImageUrl" alt="@food.Name" class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800 mb-1">@food.Name</h3>
+                        <p class="text-sm text-gray-600 mb-3">@food.Description</p>
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            @for (int i = 0; i < 4; i++)
+                            {
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            }
+                            <svg class="w-4 h-4 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            @if (food.descountedPrice != 0)
+                            {
+                                <span class="text-xl font-semibold text-gray-500 line-through">R$@food.descountedPrice.ToString("N2")</span>
+                            }
+                            <span class="text-xl font-semibold text-green-500">R$@food.Price.ToString("N2")</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
 
     
 @code {
@@ -84,10 +124,18 @@
     List<Restaurant>? restaurants;
     List<Promotion>? promotions;
 
+    List<Food>?foods;
+
     protected override void OnInitialized()
     {
         promotions = homeService.getPromotion();
         restaurants = homeService.getRestaurants();
         categories =  homeService.getCategories();
+        foods = deliveryService.GetFoods();
+    }
+
+    public void AddFoodToCart(Food food){
+        cartService.AddToCart(food);
+
     }
 }
