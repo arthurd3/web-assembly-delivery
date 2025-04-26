@@ -11,18 +11,24 @@
         <main class="custom-bg">
             @Body
         </main>
+
     @if(!Header.isOpen()){
         <Navbar />
     }
-    
-    
-    
+     
 </div>
 
 @code {
+
     protected override void OnInitialized()
     {
+        Header.OnToggleCart += StateHasChanged;
         Navigation.NavigateTo("/home");
+    }
+
+    public void Dispose()
+    {
+        Header.OnToggleCart += StateHasChanged;
     }
 }
 

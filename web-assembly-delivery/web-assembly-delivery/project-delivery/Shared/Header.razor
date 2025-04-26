@@ -1,6 +1,7 @@
 @inject IJSRuntime JSRuntime
 @implements IDisposable
 
+
 <!-- Top Navigation Bar -->
 <header class="bg-red-600 text-white sticky top-0 z-50 shadow-md">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -166,6 +167,7 @@
     private static bool IsCartOpen { get; set;} = false;
     private List<FoodCart> CartItems = CartService.CartItems;
     private double CartTotal => CartItems.Sum(item => item.Price * item.Quantity);
+    public static Action? OnToggleCart;
 
     protected override void OnInitialized()
     {
@@ -195,6 +197,7 @@
     private void ToggleCart()
     {
         IsCartOpen = !IsCartOpen;
+        OnToggleCart?.Invoke();
     }
 
     private void UpdateQuantity(FoodCart item, int change)
@@ -230,9 +233,6 @@
 
     public static bool isOpen(){
         
-        if(IsCartOpen){
-            return true;
-        }
-        return false;
+        return IsCartOpen;
     }
 }
