@@ -173,7 +173,6 @@
     {
         CartItems =  cartService.CartItems;
         cartService.OnChange += StateHasChanged;
-        updateState();
     }
 
     private void ToggleCart()
@@ -197,9 +196,6 @@
     private void RemoveItem(FoodCart item)
     {
         CartItems.Remove(item);
-    }
-    public void updateState(){
-        StateHasChanged();
     }
 
     public static bool isOpen(){

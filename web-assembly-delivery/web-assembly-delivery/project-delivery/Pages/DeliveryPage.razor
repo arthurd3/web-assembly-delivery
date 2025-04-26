@@ -16,7 +16,7 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        @foreach (var food in foods.OrderBy(r => Guid.NewGuid()))
+        @foreach (var food in randomizeFoods)
         {
             if (typeFoods.Contains(food.Name))
             {
@@ -60,6 +60,7 @@
 
 
 @code {
+    private static List<Food>? randomizeFoods;
     private List<Food>? foods;
     private string? h2Food;
     private List<string>? typeFoods;
@@ -74,7 +75,6 @@
         typeFoods = deliveryService.getTypeFoods();
 
         StateHasChanged();
-
     }
 
     public void sendToCart(Food food){
@@ -86,6 +86,7 @@
         foods = deliveryService.GetFoods();
         h2Food = deliveryService.GetH2();
         typeFoods = deliveryService.getTypeFoods();
+        randomizeFoods = foods.OrderBy(r => Guid.NewGuid()).ToList();
 
     }
 

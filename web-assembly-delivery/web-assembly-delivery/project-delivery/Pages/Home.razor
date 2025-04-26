@@ -84,7 +84,7 @@
             <a href="/delivery-page" class="text-red-600 font-medium">Ver todos</a>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            @foreach (var food in foods.OrderBy(r => Guid.NewGuid()).Take(12))
+            @foreach (var food in randomizeFoods)
             {
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer" @onclick="() => AddFoodToCart(food)">
                     <div class="relative">
@@ -119,7 +119,7 @@
 
     
 @code {
-    
+    private static List<Food>? randomizeFoods;
     List<Category>? categories;
     List<Restaurant>? restaurants;
     List<Promotion>? promotions;
@@ -132,6 +132,8 @@
         restaurants = homeService.getRestaurants();
         categories =  homeService.getCategories();
         foods = deliveryService.GetFoods();
+        randomizeFoods = foods.OrderBy(r => Guid.NewGuid()).Take(8).ToList();
+
     }
 
     public void AddFoodToCart(Food food){
