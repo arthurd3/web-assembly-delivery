@@ -13,4 +13,4 @@ npm run dev
 dontet watch
 
 
-integrantes : Arthur Campos , Arthur Medeiros , Felipe Correa , Vinicius Leite Murtinho
+integrantes : Arthur Campos , Arthur Medeiros , Filipe Correa , Vinicius Leite Murtinho
