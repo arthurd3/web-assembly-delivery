@@ -11,3 +11,6 @@ npm run dev
 
 3. (Rodar o Projeto Web-Assembly) -> 
 dontet watch
+
+
+integrantes : Arthur Campos , Arthur Medeiros , Felipe Correa
