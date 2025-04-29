@@ -10,7 +10,7 @@ npm install
 npm run dev
 
 3. (Rodar o Projeto Web-Assembly) -> 
-dontet watch
+dotnet watch
 
 
 integrantes : Arthur Campos , Arthur Medeiros , Filipe Correa , Vinicius Leite Murtinho
