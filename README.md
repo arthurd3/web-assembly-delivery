@@ -1,6 +1,6 @@
 FRONT-END-DELIVERY
 
-RODAR O PROJETO
+RODAR O PROJETO WEB ASSEMBLY TEST1
 
 
 1. (Instalar dependencias do note) -> 
