@@ -1,19 +1,28 @@
 @page "/profile"
+@inject HttpClient Http
+@inject NavigationManager NavManager
 
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
     <div class="max-w-xl mx-auto bg-white p-10 rounded-lg shadow-md">
 
         <h3 class="text-3xl font-bold text-center mb-8">Perfil</h3>
 
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline">@errorMessage</span>
+            </div>
+        }
+
         <div class="mb-8">
             <label for="username" class="block text-base font-medium text-gray-700">Login:</label>
-            <input id="username" type="text" placeholder="Digite seu login"
+            <input @bind="username" id="username" type="text" placeholder="Digite seu login"
                 class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
         </div>
 
         <div class="mb-8">
             <label for="password" class="block text-base font-medium text-gray-700">Senha:</label>
-            <input id="password" type="password" placeholder="Digite sua senha"
+            <input @bind="password" id="password" type="password" placeholder="Digite sua senha"
                 class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
         </div>
 
@@ -24,10 +33,48 @@
         </div>
 
         <div class="mb-8 flex justify-center">
-            <button type="button"
+            <button @onclick="HandleLogin" type="button"
                 class="w-72 bg-red-600 text-white py-4 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1">
                 Entrar
             </button>
         </div>
     </div>
 </div>
+
+@code {
+    // Variáveis para armazenar os dados dos inputs
+    private string username = "";
+    private string password = "";
+    private string? errorMessage;
+
+    private async Task HandleLogin()
+    {
+        errorMessage = null; // Limpa a mensagem de erro anterior
+
+        try
+        {
+            // 1. Cria o objeto com os dados do formulário
+            var loginRequest = new { Username = username, Password = password };
+
+            // 2. Envia os dados para o endpoint "/login" do backend via POST
+            var response = await Http.PostAsJsonAsync("login", loginRequest);
+
+            // 3. Verifica a resposta do backend
+            if (response.IsSuccessStatusCode)
+            {
+                // Se o login deu certo, navega para a página principal
+                NavManager.NavigateTo("/");
+            }
+            else
+            {
+                // Se o login deu errado (ex: 401 Unauthorized), mostra uma mensagem
+                errorMessage = "Login ou senha inválidos. Tente novamente.";
+            }
+        }
+        catch (Exception ex)
+        {
+            // Se houve um erro de conexão com a API
+            errorMessage = "Erro ao tentar conectar com o servidor. Tente mais tarde.";
+        }
+    }
+}
