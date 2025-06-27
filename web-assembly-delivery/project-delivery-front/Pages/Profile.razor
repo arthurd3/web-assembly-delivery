@@ -42,38 +42,34 @@
 </div>
 
 @code {
-    // Variáveis para armazenar os dados dos inputs
     private string username = "";
     private string password = "";
     private string? errorMessage;
 
     private async Task HandleLogin()
     {
-        errorMessage = null; // Limpa a mensagem de erro anterior
+        errorMessage = null; 
 
         try
         {
-            // 1. Cria o objeto com os dados do formulário
+        
             var loginRequest = new { Username = username, Password = password };
 
-            // 2. Envia os dados para o endpoint "/login" do backend via POST
+            
             var response = await Http.PostAsJsonAsync("login", loginRequest);
 
-            // 3. Verifica a resposta do backend
+           
             if (response.IsSuccessStatusCode)
             {
-                // Se o login deu certo, navega para a página principal
                 NavManager.NavigateTo("/");
             }
             else
             {
-                // Se o login deu errado (ex: 401 Unauthorized), mostra uma mensagem
                 errorMessage = "Login ou senha inválidos. Tente novamente.";
             }
         }
         catch (Exception ex)
         {
-            // Se houve um erro de conexão com a API
             errorMessage = "Erro ao tentar conectar com o servidor. Tente mais tarde.";
         }
     }
