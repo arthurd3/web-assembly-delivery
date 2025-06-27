@@ -1,9 +1,0 @@
-# .NET build artifacts
-bin/
-obj/
-
-
-bin/Debug/
-obj/Debug/
-
-obj/Debug/net9.0/
