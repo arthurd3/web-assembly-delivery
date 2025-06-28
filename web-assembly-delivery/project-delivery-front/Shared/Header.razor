@@ -1,5 +1,8 @@
+@implements IDisposable
 @inject IJSRuntime JSRuntime
 @inject CartService cartService
+@inject AuthenticationService AuthService
+@inject NavigationManager NavigationManager
 
 
 <!-- Top Navigation Bar -->
@@ -25,7 +28,7 @@
                     <span class="w-56 h-48 rounded bg-red-600 absolute bottom-0 left-0 translate-x-full ease-out cursor-pointer duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                     <span class="relative w-full text-left text-white-600 transition-colors duration-300 ease-in-out group-hover:text-red cursor-pointer">Carrinho</span>
                     </button>
-                    @if (CartItems.Count > 0)
+                    @if (CartItems is not null && CartItems.Count > 0)
                     {
                         <span class="bg-white text-red-600 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">
                             @CartItems.Count
@@ -33,7 +36,20 @@
                     }
 
             </button>
-            <button class="bg-white text-red-600 px-4 py-1 rounded-full font-medium cursor-pointer"><a href="/profile">Entrar</a></button>
+            
+            @if (AuthService.CurrentUser is null)
+            {
+                <a href="/profile" class="bg-white text-red-600 px-4 py-1 rounded-full font-medium cursor-pointer">Entrar</a>
+            }
+            else
+            {
+                <div class="flex items-center space-x-4">
+                    <span class="font-medium">Olá, @AuthService.CurrentUser.Name</span>
+                    <button @onclick="Logout" class="bg-transparent border border-white text-white px-4 py-1 rounded-full font-medium cursor-pointer hover:bg-white hover:text-red-600 transition-colors">
+                        Sair
+                    </button>
+                </div>
+            }
         </div>
     </div>
     <div class="md:hidden bg-white text-gray-800 px-4 py-2">
@@ -82,7 +98,7 @@
                         </div>
 
                         <div class="mt-4 max-h-96 overflow-y-auto">
-                            @if (CartItems.Count == 0)
+                            @if (CartItems is null || CartItems.Count == 0)
                             {
                                 <div class="text-center py-8">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -135,7 +151,7 @@
                         </div>
                     </div>
 
-                    @if (CartItems.Count > 0)
+                    @if (CartItems is not null && CartItems.Count > 0)
                     {
                         <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                             <div class="w-full">
@@ -166,13 +182,14 @@
 @code {
     private static bool IsCartOpen { get; set;} = false;
     private List<FoodCart>? CartItems;
-    private double CartTotal => CartItems.Sum(item => item.Price * item.Quantity);
+    private double CartTotal => CartItems?.Sum(item => item.Price * item.Quantity) ?? 0.0;
     public static Action? OnToggleCart;
 
     protected override void OnInitialized()
     {
         CartItems =  cartService.CartItems;
         cartService.OnChange += StateHasChanged;
+        AuthService.OnChange += StateHasChanged; // Reage a mudanças de login/logout
     }
 
     private void ToggleCart()
@@ -195,10 +212,22 @@
 
     private void RemoveItem(FoodCart item)
     {
-        CartItems.Remove(item);
+        CartItems?.Remove(item);
+    }
+    
+    private void Logout()
+    {
+        AuthService.Logout();
+        NavigationManager.NavigateTo("/"); // Redireciona para a home após o logout
     }
 
     public static bool isOpen(){
         return IsCartOpen;
+    }
+
+    public void Dispose()
+    {
+        cartService.OnChange -= StateHasChanged;
+        AuthService.OnChange -= StateHasChanged; // Remove a inscrição para evitar memory leaks
     }
 }
