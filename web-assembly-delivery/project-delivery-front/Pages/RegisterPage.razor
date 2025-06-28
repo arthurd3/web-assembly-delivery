@@ -1,0 +1,120 @@
+@page "/register"
+@using System.ComponentModel.DataAnnotations
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="max-w-xl w-full mx-auto bg-white p-10 rounded-lg shadow-md">
+
+        <h3 class="text-3xl font-bold text-center mb-8">Criar Conta</h3>
+
+        <EditForm Model="@registerModel" OnValidSubmit="HandleRegistration">
+            <DataAnnotationsValidator />
+
+            <div class="mb-6">
+                <label for="username" class="block text-base font-medium text-gray-700">Login:</label>
+                <InputText id="username" @bind-Value="registerModel.Username" placeholder="Escolha um nome de utilizador"
+                    class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                <ValidationMessage For="@(() => registerModel.Username)" class="text-red-600 text-sm mt-1" />
+            </div>
+
+            <div class="mb-6">
+                <label for="password" class="block text-base font-medium text-gray-700">Senha:</label>
+                <InputText id="password" type="password" @bind-Value="registerModel.Password" placeholder="Crie uma senha"
+                    class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                <ValidationMessage For="@(() => registerModel.Password)" class="text-red-600 text-sm mt-1" />
+            </div>
+            
+            <div class="mb-8">
+                <label for="confirmPassword" class="block text-base font-medium text-gray-700">Confirmar Senha:</label>
+                <InputText id="confirmPassword" type="password" @bind-Value="registerModel.ConfirmPassword" placeholder="Confirme a sua senha"
+                    class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                <ValidationMessage For="@(() => registerModel.ConfirmPassword)" class="text-red-600 text-sm mt-1" />
+            </div>
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                    <span class="block sm:inline">@errorMessage</span>
+                </div>
+            }
+
+            <div class="mb-8 flex justify-center">
+                <button type="submit" disabled="@isSubmitting"
+                    class="w-72 bg-red-600 text-white py-4 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1 disabled:bg-red-400">
+                    @if (isSubmitting)
+                    {
+                        <span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>
+                        <span>A Registar...</span>
+                    }
+                    else
+                    {
+                        <span>Registar</span>
+                    }
+                </button>
+            </div>
+
+            <div class="text-center">
+                <a href="/profile" class="text-gray-600 hover:underline text-lg">
+                    Já tem uma conta? Entre aqui
+                </a>
+            </div>
+
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private RegisterModel registerModel = new();
+    private string? errorMessage;
+    private bool isSubmitting = false;
+
+    private async Task HandleRegistration()
+    {
+        errorMessage = null;
+        isSubmitting = true;
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("register", new { registerModel.Username, registerModel.Password });
+
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/profile");
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.Conflict)
+            {
+                // Conflito, o nome de utilizador já existe.
+                errorMessage = "Este nome de utilizador já está em uso. Por favor, escolha outro.";
+            }
+            else
+            {
+                // Outros erros
+                errorMessage = "Ocorreu um erro inesperado ao tentar efetuar o registo.";
+            }
+        }
+        catch (Exception)
+        {
+            errorMessage = "Não foi possível conectar ao servidor. Verifique a sua conexão com a API.";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+
+    public class RegisterModel
+    {
+        [Required(ErrorMessage = "O nome de utilizador é obrigatório.")]
+        public string Username { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "A senha é obrigatória.")]
+        [MinLength(4, ErrorMessage = "A senha deve ter pelo menos 4 caracteres.")]
+        public string Password { get; set; } = string.Empty;
+        
+        [Required(ErrorMessage = "A confirmação de senha é obrigatória.")]
+        [Compare(nameof(Password), ErrorMessage = "As senhas não coincidem.")]
+        public string ConfirmPassword { get; set; } = string.Empty;
+    }
+}

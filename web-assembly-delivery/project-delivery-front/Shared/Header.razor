@@ -5,7 +5,6 @@
 @inject NavigationManager NavigationManager
 
 
-<!-- Top Navigation Bar -->
 <header class="bg-red-600 text-white sticky top-0 z-50 shadow-md">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
         <div class="flex items-center space-x-4">
@@ -62,11 +61,11 @@
     </div>
 </header>
 
-<!-- Cart Modal -->
+
 @if (IsCartOpen)
 {
     <div class="fixed inset-0 z-50 overflow-hidden">
-        <!-- Bloqueia o scroll do body -->
+        
         <style>
             body {
                 overflow: hidden;
@@ -76,12 +75,11 @@
             }
         </style>
 
-        <!-- Background overlay - agora bloqueia interações -->
+        
         <div class="fixed inset-0 backdrop-blur-sm bg-transparent transition-opacity" 
              aria-hidden="true"
              @onclick="ToggleCart"></div>
 
-        <!-- Modal content -->
         <div class="fixed inset-0 overflow-y-auto">
             <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                 <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
