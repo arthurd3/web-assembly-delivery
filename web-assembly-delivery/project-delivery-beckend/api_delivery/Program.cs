@@ -5,7 +5,7 @@ using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configuração do CORS
+//Configuração do CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: "AllowFrontend", policy =>
@@ -16,7 +16,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// 2. Configuração do Dapper
+// Configuração do Dapper
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=delivery.db";
 builder.Services.AddScoped<IDbConnection>(sp => new SqliteConnection(connectionString));
 // CORRIGIDO: Alterado de Singleton para Scoped
@@ -24,18 +24,15 @@ builder.Services.AddScoped<DatabaseInitializer>();
 
 var app = builder.Build();
 
-// 3. Inicialização do Banco de Dados
-// CORRIGIDO: O inicializador agora é chamado dentro de um escopo de serviço
 using (var scope = app.Services.CreateScope())
 {
     var dbInitializer = scope.ServiceProvider.GetRequiredService<DatabaseInitializer>();
     dbInitializer.Initialize();
 }
 
-
 app.UseCors("AllowFrontend");
 
-// 4. Mapeamento dos Endpoints
+// Mapeamento dos Endpoints
 app.MapAuthenticationEndpoints();
 app.MapRegisterEndpoints();
 

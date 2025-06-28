@@ -85,12 +85,12 @@
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.Conflict)
             {
-                // Conflito, o nome de utilizador já existe.
+        
                 errorMessage = "Este nome de utilizador já está em uso. Por favor, escolha outro.";
             }
             else
             {
-                // Outros erros
+                
                 errorMessage = "Ocorreu um erro inesperado ao tentar efetuar o registo.";
             }
         }

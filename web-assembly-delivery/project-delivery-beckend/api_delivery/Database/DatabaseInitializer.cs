@@ -5,7 +5,7 @@ using System.Data;
 
 public class DatabaseInitializer
 {
-    // CORRIGIDO: Injeta IDbConnection diretamente
+    // Injeta IDbConnection diretamente
     private readonly IDbConnection _connection;
 
     public DatabaseInitializer(IDbConnection connection)
@@ -15,7 +15,6 @@ public class DatabaseInitializer
 
     public void Initialize()
     {
-        // A conexão agora é injetada diretamente
         var sql = @"
         CREATE TABLE IF NOT EXISTS Users (
             Id           INTEGER PRIMARY KEY AUTOINCREMENT,
