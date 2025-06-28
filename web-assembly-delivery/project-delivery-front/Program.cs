@@ -7,18 +7,15 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-// ESTA É A ÚNICA CONFIGURAÇÃO DE HTTPCLIENT QUE DEVE EXISTIR
 builder.Services.AddScoped(sp => new HttpClient
 {
-    // Ela aponta corretamente para o seu backend
     BaseAddress = new Uri("http://localhost:5281")
 });
 
 //Injecao de Dependencia
-builder.Services.AddSingleton<DeliveryService>();
-builder.Services.AddSingleton<HomeService>();
-builder.Services.AddSingleton<CartService>();
-
-// A LINHA PROBLEMÁTICA FOI REMOVIDA DAQUI.
+builder.Services.AddScoped<DeliveryService>();
+builder.Services.AddScoped<HomeService>();
+builder.Services.AddScoped<CartService>();
+builder.Services.AddScoped<AuthenticationService>();
 
 await builder.Build().RunAsync();

@@ -1,76 +1,88 @@
 @page "/profile"
-@inject HttpClient Http
-@inject NavigationManager NavManager
+@using System.ComponentModel.DataAnnotations
+@using project_delivery.Service
+@inject AuthenticationService AuthService
+@inject NavigationManager NavigationManager
 
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="max-w-xl mx-auto bg-white p-10 rounded-lg shadow-md">
+    <div class="max-w-xl w-full mx-auto bg-white p-10 rounded-lg shadow-md">
 
         <h3 class="text-3xl font-bold text-center mb-8">Perfil</h3>
 
-        @if (!string.IsNullOrEmpty(errorMessage))
-        {
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
-                <span class="block sm:inline">@errorMessage</span>
+        <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+            <DataAnnotationsValidator />
+
+            <div class="mb-8">
+                <label for="username" class="block text-base font-medium text-gray-700">Login:</label>
+                <InputText id="username" @bind-Value="loginModel.Username" placeholder="Digite seu login"
+                    class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                <ValidationMessage For="@(() => loginModel.Username)" class="text-red-600 text-sm mt-1" />
             </div>
-        }
 
-        <div class="mb-8">
-            <label for="username" class="block text-base font-medium text-gray-700">Login:</label>
-            <input @bind="username" id="username" type="text" placeholder="Digite seu login"
-                class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
-        </div>
+            <div class="mb-8">
+                <label for="password" class="block text-base font-medium text-gray-700">Senha:</label>
+                <InputText id="password" type="password" @bind-Value="loginModel.Password" placeholder="Digite sua senha"
+                    class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                <ValidationMessage For="@(() => loginModel.Password)" class="text-red-600 text-sm mt-1" />
+            </div>
 
-        <div class="mb-8">
-            <label for="password" class="block text-base font-medium text-gray-700">Senha:</label>
-            <input @bind="password" id="password" type="password" placeholder="Digite sua senha"
-                class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
-        </div>
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                    <span class="block sm:inline">@errorMessage</span>
+                </div>
+            }
 
-        <div class="text-center mb-6">
-            <a href="/register" class="text-grey-600 hover:underline text-lg">
-                Criar uma conta
-            </a>
-        </div>
+            <div class="text-center mb-6">
+                <a href="/register" class="text-gray-600 hover:underline text-lg">
+                    Criar uma conta
+                </a>
+            </div>
 
-        <div class="mb-8 flex justify-center">
-            <button @onclick="HandleLogin" type="button"
-                class="w-72 bg-red-600 text-white py-4 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1">
-                Entrar
-            </button>
-        </div>
+            <div class="mb-8 flex justify-center">
+                <button type="submit"
+                    class="w-72 bg-red-600 text-white py-4 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1">
+                    Entrar
+                </button>
+            </div>
+        </EditForm>
     </div>
 </div>
 
 @code {
-    private string username = "";
-    private string password = "";
+    private LoginModel loginModel { get; set; } = new();
+    
     private string? errorMessage;
 
     private async Task HandleLogin()
     {
-        errorMessage = null; 
-
+        errorMessage = null;
         try
         {
-        
-            var loginRequest = new { Username = username, Password = password };
+            bool success = await AuthService.LoginAsync(loginModel.Username, loginModel.Password);
 
-            
-            var response = await Http.PostAsJsonAsync("login", loginRequest);
-
-           
-            if (response.IsSuccessStatusCode)
+            if (success)
             {
-                NavManager.NavigateTo("/");
+                NavigationManager.NavigateTo("/");
             }
             else
             {
-                errorMessage = "Login ou senha inválidos. Tente novamente.";
+                errorMessage = "Login ou senha inválidos. Por favor, tente novamente.";
             }
         }
         catch (Exception ex)
         {
-            errorMessage = "Erro ao tentar conectar com o servidor. Tente mais tarde.";
+            errorMessage = "Ocorreu um erro ao tentar fazer o login. Verifique sua conexão com a API.";
+            Console.WriteLine(ex.Message);
         }
+    }
+
+    public class LoginModel
+    {
+        [Required(ErrorMessage = "O campo Login é obrigatório.")]
+        public string Username { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "O campo Senha é obrigatório.")]
+        public string Password { get; set; } = string.Empty;
     }
 }
