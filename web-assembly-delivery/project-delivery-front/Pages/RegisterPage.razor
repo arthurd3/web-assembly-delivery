@@ -77,6 +77,7 @@
 
         try
         {
+            // CORRIGIDO: Agora envia apenas Username e Password, como o backend espera.
             var response = await Http.PostAsJsonAsync("register", new { registerModel.Username, registerModel.Password });
 
             if (response.IsSuccessStatusCode)
@@ -85,18 +86,17 @@
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.Conflict)
             {
-        
                 errorMessage = "Este nome de utilizador já está em uso. Por favor, escolha outro.";
             }
             else
             {
-                
-                errorMessage = "Ocorreu um erro inesperado ao tentar efetuar o registo.";
+                var errorContent = await response.Content.ReadAsStringAsync();
+                errorMessage = $"Ocorreu um erro inesperado: {response.ReasonPhrase} | {errorContent}";
             }
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            errorMessage = "Não foi possível conectar ao servidor. Verifique a sua conexão com a API.";
+            errorMessage = $"Não foi possível conectar ao servidor. Verifique a sua conexão com a API. Erro: {ex.Message}";
         }
         finally
         {

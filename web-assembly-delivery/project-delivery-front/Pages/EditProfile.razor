@@ -1,0 +1,154 @@
+@page "/user-profile/edit"
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@implements IDisposable
+
+@using System.ComponentModel.DataAnnotations
+@inject project_delivery.Service.AuthenticationService AuthService
+@inject NavigationManager NavManager
+@inject HttpClient Http
+
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="max-w-xl w-full mx-auto bg-white p-10 rounded-lg shadow-md">
+
+        <h3 class="text-3xl font-bold text-center mb-8">Editar Perfil</h3>
+
+        @if (editModel is not null)
+        {
+            <EditForm Model="@editModel" OnValidSubmit="HandleUpdateProfile">
+                <DataAnnotationsValidator />
+
+                <div class="mb-6">
+                    <label for="username" class="block text-base font-medium text-gray-700">Nome de Utilizador:</label>
+                    <InputText id="username" @bind-Value="editModel.Username" disabled
+                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm bg-gray-100 text-lg" />
+                    <p class="text-sm text-gray-500 mt-1">O nome de utilizador não pode ser alterado.</p>
+                </div>
+
+                <div class="mb-6">
+                    <label for="password" class="block text-base font-medium text-gray-700">Nova Senha:</label>
+                    <InputText id="password" type="password" @bind-Value="editModel.NewPassword" placeholder="Deixe em branco para não alterar"
+                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                    <ValidationMessage For="@(() => editModel.NewPassword)" class="text-red-600 text-sm mt-1" />
+                </div>
+                
+                <div class="mb-8">
+                    <label for="confirmPassword" class="block text-base font-medium text-gray-700">Confirmar Nova Senha:</label>
+                    <InputText id="confirmPassword" type="password" @bind-Value="editModel.ConfirmPassword" placeholder="Confirme a nova senha"
+                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                    <ValidationMessage For="@(() => editModel.ConfirmPassword)" class="text-red-600 text-sm mt-1" />
+                </div>
+
+                @if (!string.IsNullOrEmpty(feedbackMessage))
+                {
+                    <div class="@FeedbackClass" role="alert">
+                        <span class="block sm:inline">@feedbackMessage</span>
+                    </div>
+                }
+
+            </EditForm>
+        }
+        else
+        {
+            <p class="text-center text-gray-500">A carregar informações do utilizador...</p>
+        }
+    </div>
+</div>
+
+@code {
+    private EditProfileModel? editModel;
+    private string? feedbackMessage;
+    private bool isError = false;
+    private bool isSubmitting = false;
+    private CancellationTokenSource _cts = new CancellationTokenSource();
+
+    private string FeedbackClass => isError
+        ? "bg-red-100 border-red-400 text-red-700 px-4 py-3 rounded relative"
+        : "bg-green-100 border-green-400 text-green-700 px-4 py-3 rounded relative";
+
+    protected override void OnInitialized()
+    {
+        if (AuthService.CurrentUser?.Name is not null)
+        {
+            editModel = new EditProfileModel
+            {
+                Username = AuthService.CurrentUser.Name
+            };
+        }
+        else
+        {
+            // Caso de segurança, se o utilizador não estiver carregado, volta para o login
+            NavManager.NavigateTo("/profile");
+        }
+    }
+
+    private async Task HandleUpdateProfile()
+    {
+        if (editModel is null) return;
+
+        feedbackMessage = null;
+        isSubmitting = true;
+        
+        // Só tenta atualizar se uma nova senha for fornecida.
+        if (string.IsNullOrWhiteSpace(editModel.NewPassword))
+        {
+            isError = false;
+            feedbackMessage = "Nenhuma alteração para salvar.";
+            isSubmitting = false;
+            await ClearMessageAfterDelay(3000);
+            return;
+        }
+
+        try
+        {
+            // NOTA: Para isto funcionar, você precisará de um endpoint no backend.
+            // Exemplo: PUT /api/users/update-password
+            var response = await Http.PutAsJsonAsync("users/update-password", editModel, _cts.Token);
+
+            if (response.IsSuccessStatusCode)
+            {
+                isError = false;
+                feedbackMessage = "Senha alterada com sucesso!";
+                editModel.NewPassword = string.Empty;
+                editModel.ConfirmPassword = string.Empty;
+                await ClearMessageAfterDelay(3000);
+            }
+            else
+            {
+                isError = true;
+                feedbackMessage = "Ocorreu um erro ao tentar alterar a senha.";
+            }
+        }
+        catch (Exception)
+        {
+            isError = true;
+            feedbackMessage = "Erro de conexão. Não foi possível conectar ao servidor.";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+
+    private async Task ClearMessageAfterDelay(int milliseconds)
+    {
+        await Task.Delay(milliseconds);
+        feedbackMessage = null;
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        _cts.Cancel();
+        _cts.Dispose();
+    }
+
+    public class EditProfileModel
+    {
+        public string Username { get; set; } = string.Empty;
+
+        public string? NewPassword { get; set; }
+
+        [Compare(nameof(NewPassword), ErrorMessage = "As senhas não coincidem.")]
+        public string? ConfirmPassword { get; set; }
+    }
+}

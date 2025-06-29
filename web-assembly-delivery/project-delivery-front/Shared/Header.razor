@@ -226,6 +226,6 @@
     public void Dispose()
     {
         cartService.OnChange -= StateHasChanged;
-        AuthService.OnChange -= StateHasChanged; // Remove a inscrição para evitar memory leaks
+        AuthService.OnChange -= StateHasChanged; 
     }
 }

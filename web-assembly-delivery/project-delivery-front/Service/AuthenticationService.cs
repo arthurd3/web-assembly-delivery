@@ -1,56 +1,48 @@
+namespace project_delivery.Service;
+
 using System.Net.Http.Json;
 using System.Text.Json;
 
-namespace project_delivery.Service; 
-
 public class AuthenticationService
 {
-    private readonly HttpClient _httpClient;
-
-    public AuthenticationService(HttpClient httpClient)
-    {
-        _httpClient = httpClient;
-    }
-
+    private readonly IHttpClientFactory _httpClientFactory;
     public User? CurrentUser { get; private set; }
-
-
+    public string? Token { get; private set; }
     public event Action? OnChange;
 
+    public AuthenticationService(IHttpClientFactory httpClientFactory)
+    {
+        _httpClientFactory = httpClientFactory;
+    }
 
     public async Task<bool> LoginAsync(string username, string password)
     {
+        var httpClient = _httpClientFactory.CreateClient("Api");
         try
         {
-            var loginRequest = new { Username = username, Password = password };
-            var response = await _httpClient.PostAsJsonAsync("login", loginRequest);
+            var response = await httpClient.PostAsJsonAsync("login", new { Username = username, Password = password });
+            if (!response.IsSuccessStatusCode) return false;
 
-            if (response.IsSuccessStatusCode)
-            {
-            
-                CurrentUser = new User { Name = username };
-                NotifyStateChanged(); 
-                return true;
-            }
+            var loginResult = await response.Content.ReadFromJsonAsync<LoginResult>();
+            if (loginResult is null || string.IsNullOrEmpty(loginResult.Token)) return false;
 
-            return false;
+            Token = loginResult.Token;
+            CurrentUser = new User { Name = loginResult.Username };
+            NotifyStateChanged(); 
+            return true;
         }
-        catch
-        {
-            return false;
-        }
+        catch { return false; }
     }
 
     public void Logout()
     {
         CurrentUser = null;
+        Token = null;
         NotifyStateChanged();
     }
 
     private void NotifyStateChanged() => OnChange?.Invoke();
 }
 
-public class User
-{
-    public string Name { get; set; } = string.Empty;
-}
+public class User { public string Name { get; set; } = string.Empty; }
+public class LoginResult { public string Token { get; set; } = string.Empty; public string Username { get; set; } = string.Empty; }

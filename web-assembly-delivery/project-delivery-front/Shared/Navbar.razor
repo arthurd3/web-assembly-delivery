@@ -1,4 +1,6 @@
-﻿@inject NavigationManager Navigation
+﻿@implements IDisposable
+@inject NavigationManager Navigation
+@inject project_delivery.Service.AuthenticationService AuthService
 
 <!-- Bottom Navigation -->
 <nav class="fixed bottom-0 w-full bg-white border-t border-gray-200 flex justify-around py-3 z-50">
@@ -23,20 +25,35 @@
         <span class="text-xs mt-1">Pedidos</span>
     </NavLink>
 
-    <NavLink href="/profile" class="@GetNavLinkClass("/profile")" Match="NavLinkMatch.All">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-        </svg>
-        <span class="text-xs mt-1">Perfil</span>
-    </NavLink>
-
+    @if (AuthService.CurrentUser is not null)
+    {
+        <!-- Mostra este link se o utilizador estiver autenticado -->
+        <NavLink href="/user-profile" class="@GetNavLinkClass("/user-profile")" Match="NavLinkMatch.All">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            <span class="text-xs mt-1">Perfil</span>
+        </NavLink>
+    }
+    else
+    {
+        <!-- Mostra este link se o utilizador NÃO estiver autenticado -->
+        <NavLink href="/profile" class="@GetNavLinkClass("/profile")" Match="NavLinkMatch.All">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            <span class="text-xs mt-1">Perfil</span>
+        </NavLink>
+    }
     
 </nav>
 
 @code {
     protected override void OnInitialized()
     {
+        // Subscreve aos eventos para forçar a atualização da UI
         Navigation.LocationChanged += HandleLocationChanged;
+        AuthService.OnChange += StateHasChanged;
     }
 
     private void HandleLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
@@ -46,17 +63,17 @@
 
     private string GetNavLinkClass(string href)
     {
-        return IsActive(href) ? "flex flex-col items-center text-red-600" : "flex flex-col items-center text-gray-500";
-    }
-
-    private bool IsActive(string href)
-    {
-        var uri = Navigation.Uri.Replace(Navigation.BaseUri, "/");
-        return uri.Equals(href, StringComparison.OrdinalIgnoreCase);
+        var currentUri = Navigation.Uri.Replace(Navigation.BaseUri, "/");
+        // Verifica se a URI atual corresponde ao link para aplicar a classe ativa
+        return currentUri.Equals(href, StringComparison.OrdinalIgnoreCase) 
+            ? "flex flex-col items-center text-red-600" 
+            : "flex flex-col items-center text-gray-500";
     }
 
     public void Dispose()
     {
+        // Remove as subscrições para evitar memory leaks
         Navigation.LocationChanged -= HandleLocationChanged;
+        AuthService.OnChange -= StateHasChanged;
     }
 }

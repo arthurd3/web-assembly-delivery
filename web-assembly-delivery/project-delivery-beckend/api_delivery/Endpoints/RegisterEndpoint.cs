@@ -21,15 +21,16 @@ public static class RegisterEndpoint
 
             var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
+            // SQL ajustado para inserir apenas Username e PasswordHash
             var insertSql = @"
-                INSERT INTO Users (Username, PasswordHash, Email)
-                VALUES (@Username, @PasswordHash, @Email);";
+                INSERT INTO Users (Username, PasswordHash)
+                VALUES (@Username, @PasswordHash);";
     
+            // Objeto de parâmetro ajustado para não incluir o Email
             await db.ExecuteAsync(insertSql, new
             {
                 request.Username,
-                PasswordHash = passwordHash,
-                request.Email
+                PasswordHash = passwordHash
             });
 
             return Results.Ok(new { Message = "Registo efetuado com sucesso!" });
@@ -37,8 +38,8 @@ public static class RegisterEndpoint
     }
 }
 
+// Record ajustado para requerer apenas Username e Password
 public record RegisterRequest(
     [Required] string Username, 
-    [Required] string Password, 
-    string? Email
+    [Required] string Password
 );

@@ -1,0 +1,128 @@
+@page "/user-profile"
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+
+@implements IDisposable
+@inject project_delivery.Service.AuthenticationService AuthService
+@inject NavigationManager NavManager
+@inject HttpClient Http
+
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="max-w-xl w-full mx-auto bg-white p-10 rounded-lg shadow-md">
+
+        <div class="text-center mb-8">
+            <h3 class="text-3xl font-bold">Minha Conta</h3>
+            @if (AuthService.CurrentUser is not null)
+            {
+                <p class="text-lg text-gray-600 mt-2">Olá, @AuthService.CurrentUser.Name!</p>
+            }
+        </div>
+
+        <div class="space-y-4">
+            <button @onclick="NavigateToEdit" class="w-full text-left bg-gray-50 hover:bg-gray-100 p-4 rounded-lg transition-colors duration-200">
+                <h4 class="font-semibold text-lg">Editar Conta</h4>
+                <p class="text-gray-500">Altere suas informações, como nome de utilizador ou senha.</p>
+            </button>
+
+            <button @onclick="() => isDeleteModalOpen = true" class="w-full text-left bg-red-50 hover:bg-red-100 p-4 rounded-lg transition-colors duration-200">
+                <h4 class="font-semibold text-lg text-red-700">Deletar Conta</h4>
+                <p class="text-red-500">Esta ação é permanente e não pode ser desfeita.</p>
+            </button>
+        </div>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-6" role="alert">
+                <span class="block sm:inline">@errorMessage</span>
+            </div>
+        }
+    </div>
+</div>
+
+@if (isDeleteModalOpen)
+{
+    <!-- Modal de Confirmação -->
+    <div class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full">
+            <h3 class="text-2xl font-bold mb-4">Confirmar Exclusão</h3>
+            <p class="text-gray-700 mb-6">Tem a certeza de que deseja deletar permanentemente a sua conta? Todos os seus dados serão perdidos.</p>
+            <div class="flex justify-end space-x-4">
+                <button @onclick="() => isDeleteModalOpen = false" class="px-6 py-2 rounded-md text-gray-700 bg-gray-200 hover:bg-gray-300">
+                    Cancelar
+                </button>
+                <button @onclick="HandleDeleteAccount" disabled="@isDeleting" class="px-6 py-2 rounded-md text-white bg-red-600 hover:bg-red-700 disabled:bg-red-400">
+                    @if(isDeleting)
+                    {
+                        <span>Deletando...</span>
+                    }
+                    else
+                    {
+                        <span>Sim, Deletar</span>
+                    }
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+
+@code {
+    private bool isDeleteModalOpen = false;
+    private bool isDeleting = false;
+    private string? errorMessage;
+
+    protected override void OnInitialized()
+    {
+        // Subscreve ao evento para que a página seja atualizada se o utilizador fizer logout noutro local
+        AuthService.OnChange += StateHasChanged;
+    }
+
+    private void NavigateToEdit()
+    {
+        // Navega para uma página de edição (que você precisará criar)
+        NavManager.NavigateTo("/user-profile/edit");
+    }
+
+    private async Task HandleDeleteAccount()
+    {
+        isDeleting = true;
+        errorMessage = null;
+
+        try
+        {
+            // Para isto funcionar, você precisará criar um endpoint no seu backend:
+            // Ex: DELETE /users/me
+            // Este endpoint precisará de um token de autorização para saber qual utilizador deletar.
+            var response = await Http.DeleteAsync("users/me");
+
+            if (response.IsSuccessStatusCode)
+            {
+                AuthService.Logout();
+                isDeleteModalOpen = false;
+                NavManager.NavigateTo("/", forceLoad: true); // Força um recarregamento para limpar o estado
+            }
+            else
+            {
+                errorMessage = "Não foi possível deletar a sua conta. Por favor, tente novamente.";
+            }
+        }
+        catch (Exception)
+        {
+            errorMessage = "Erro de conexão. Não foi possível conectar ao servidor.";
+        }
+        finally
+        {
+            isDeleting = false;
+            // Se o modal ainda estiver aberto e houver um erro, atualiza a UI
+            if (isDeleteModalOpen)
+            {
+                StateHasChanged();
+            }
+        }
+    }
+
+    public void Dispose()
+    {
+        // Remove a subscrição ao evento para evitar memory leaks
+        AuthService.OnChange -= StateHasChanged;
+    }
+}
