@@ -18,17 +18,12 @@ builder.Services.AddAuthorizationCore();
 
 // === CONFIGURAÇÃO DO HTTPCLIENT ===
 
-// Configura um cliente HTTP "nomeado" chamado "Api".
-// Este cliente terá o endereço base e o handler de autenticação.
 builder.Services.AddHttpClient("Api", client =>
 {
     client.BaseAddress = new Uri("http://localhost:5281");
 })
 .AddHttpMessageHandler<AuthHeaderHandler>();
 
-// CORRIGIDO: Esta linha é crucial. Ela diz à aplicação que, sempre que
-// um componente injetar um 'HttpClient' (como na sua página de registo),
-// ele deve receber a instância configurada da factory com o nome "Api".
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Api"));
 
 

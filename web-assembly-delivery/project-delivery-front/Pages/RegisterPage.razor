@@ -77,7 +77,6 @@
 
         try
         {
-            // CORRIGIDO: Agora envia apenas Username e Password, como o backend espera.
             var response = await Http.PostAsJsonAsync("register", new { registerModel.Username, registerModel.Password });
 
             if (response.IsSuccessStatusCode)

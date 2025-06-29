@@ -72,13 +72,11 @@
 
     protected override void OnInitialized()
     {
-        // Subscreve ao evento para que a página seja atualizada se o utilizador fizer logout noutro local
         AuthService.OnChange += StateHasChanged;
     }
 
     private void NavigateToEdit()
     {
-        // Navega para uma página de edição (que você precisará criar)
         NavManager.NavigateTo("/user-profile/edit");
     }
 
@@ -89,9 +87,6 @@
 
         try
         {
-            // Para isto funcionar, você precisará criar um endpoint no seu backend:
-            // Ex: DELETE /users/me
-            // Este endpoint precisará de um token de autorização para saber qual utilizador deletar.
             var response = await Http.DeleteAsync("users/me");
 
             if (response.IsSuccessStatusCode)

@@ -8,9 +8,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configuração dos Serviços
-// =================================================
-
 // Adiciona os serviços de autorização
 builder.Services.AddAuthorization();
 
@@ -18,8 +15,6 @@ builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        // NOTA: Esta chave secreta é um exemplo. Em produção, use uma chave
-        // segura e guarde-a no appsettings.json ou em um cofre de segredos.
         var secretKey = builder.Configuration["Jwt:SecretKey"] ?? "uma-chave-secreta-muito-longa-e-segura-aqui-deve-ter-pelo-menos-32-bytes";
         
         options.TokenValidationParameters = new TokenValidationParameters
