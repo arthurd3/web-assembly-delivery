@@ -7,10 +7,16 @@
 @inject NavigationManager NavManager
 @inject HttpClient Http
 
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="max-w-xl w-full mx-auto bg-white p-10 rounded-lg shadow-md">
+<!-- 
+  CORRIGIDO: O layout foi simplificado para funcionar dentro do @Body do seu MainLayout.
+  - Removido 'min-h-screen', 'flex', 'items-center', 'justify-center'.
+  - O container agora flui normalmente a partir do topo.
+  - 'pb-24' garante que o conteúdo não seja escondido pela barra de navegação inferior.
+-->
+<div class="container mx-auto max-w-xl px-4 py-8 pb-24">
+    <div class="w-full bg-white p-8 sm:p-10 rounded-xl shadow-lg">
 
-        <h3 class="text-3xl font-bold text-center mb-8">Editar Perfil</h3>
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Editar Perfil</h3>
 
         @if (editModel is not null)
         {
@@ -18,23 +24,23 @@
                 <DataAnnotationsValidator />
 
                 <div class="mb-6">
-                    <label for="username" class="block text-base font-medium text-gray-700">Nome de Utilizador:</label>
+                    <label for="username" class="block text-base font-medium text-gray-700">Nome de Utilizador</label>
                     <InputText id="username" @bind-Value="editModel.Username" disabled
-                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm bg-gray-100 text-lg" />
-                    <p class="text-sm text-gray-500 mt-1">O nome de utilizador não pode ser alterado.</p>
+                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm bg-gray-100 text-lg text-gray-500 cursor-not-allowed" />
+                    <p class="text-sm text-gray-500 mt-2">O nome de utilizador não pode ser alterado.</p>
                 </div>
 
                 <div class="mb-6">
-                    <label for="password" class="block text-base font-medium text-gray-700">Nova Senha:</label>
+                    <label for="password" class="block text-base font-medium text-gray-700">Nova Senha</label>
                     <InputText id="password" type="password" @bind-Value="editModel.NewPassword" placeholder="Deixe em branco para não alterar"
-                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-lg" />
                     <ValidationMessage For="@(() => editModel.NewPassword)" class="text-red-600 text-sm mt-1" />
                 </div>
                 
                 <div class="mb-8">
-                    <label for="confirmPassword" class="block text-base font-medium text-gray-700">Confirmar Nova Senha:</label>
+                    <label for="confirmPassword" class="block text-base font-medium text-gray-700">Confirmar Nova Senha</label>
                     <InputText id="confirmPassword" type="password" @bind-Value="editModel.ConfirmPassword" placeholder="Confirme a nova senha"
-                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-red-500 text-lg" />
+                        class="mt-2 block w-full px-5 py-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-lg" />
                     <ValidationMessage For="@(() => editModel.ConfirmPassword)" class="text-red-600 text-sm mt-1" />
                 </div>
 
@@ -45,19 +51,26 @@
                     </div>
                 }
 
-                <div class="mt-6">
+                <div class="mb-8 mt-10 flex justify-center">
                     <button type="submit" disabled="@isSubmitting"
-                        class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        class="w-full sm:w-72 bg-red-600 text-white py-4 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disabled:bg-red-400 text-lg transition-colors">
                         @if (isSubmitting)
                         {
-                            <span>Carregando...</span>
+                            <span>Salvando...</span>
                         }
                         else
                         {
-                            <span>Editar</span>
+                            <span>Salvar Alterações</span>
                         }
                     </button>
                 </div>
+
+                <div class="text-center">
+                    <button type="button" @onclick='() => NavManager.NavigateTo("/user-profile")' class="text-gray-600 hover:underline text-lg bg-transparent border-none p-2">
+                        Voltar ao perfil
+                    </button>
+                </div>
+
             </EditForm>
         }
         else
@@ -75,21 +88,20 @@
     private CancellationTokenSource _cts = new CancellationTokenSource();
 
     private string FeedbackClass => isError
-        ? "bg-red-100 border-red-400 text-red-700 px-4 py-3 rounded relative"
-        : "bg-green-100 border-green-400 text-green-700 px-4 py-3 rounded relative";
+        ? "bg-red-100 border-red-400 text-red-700 px-4 py-3 rounded-lg relative"
+        : "bg-green-100 border-green-400 text-green-700 px-4 py-3 rounded-lg relative";
 
     protected override void OnInitialized()
     {
-        if (AuthService.CurrentUser ?.Name is not null)
+        if (AuthService.CurrentUser?.Name is not null)
         {
             editModel = new EditProfileModel
             {
-                Username = AuthService.CurrentUser .Name
+                Username = AuthService.CurrentUser.Name
             };
         }
         else
         {
-            // Caso de segurança, se o utilizador não estiver carregado, volta para o login
             NavManager.NavigateTo("/profile");
         }
     }
@@ -101,7 +113,6 @@
         feedbackMessage = null;
         isSubmitting = true;
         
-        // Só tenta atualizar se uma nova senha for fornecida.
         if (string.IsNullOrWhiteSpace(editModel.NewPassword))
         {
             isError = false;
@@ -113,7 +124,6 @@
 
         try
         {
-            // Exemplo: PUT /api/users/update-password
             var response = await Http.PutAsJsonAsync("users/update-password", editModel, _cts.Token);
 
             if (response.IsSuccessStatusCode)
