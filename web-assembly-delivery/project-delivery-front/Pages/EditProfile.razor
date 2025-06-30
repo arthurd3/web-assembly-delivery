@@ -45,6 +45,19 @@
                     </div>
                 }
 
+                <div class="mt-6">
+                    <button type="submit" disabled="@isSubmitting"
+                        class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        @if (isSubmitting)
+                        {
+                            <span>Carregando...</span>
+                        }
+                        else
+                        {
+                            <span>Editar</span>
+                        }
+                    </button>
+                </div>
             </EditForm>
         }
         else
@@ -67,11 +80,11 @@
 
     protected override void OnInitialized()
     {
-        if (AuthService.CurrentUser?.Name is not null)
+        if (AuthService.CurrentUser ?.Name is not null)
         {
             editModel = new EditProfileModel
             {
-                Username = AuthService.CurrentUser.Name
+                Username = AuthService.CurrentUser .Name
             };
         }
         else
@@ -100,7 +113,6 @@
 
         try
         {
-            // NOTA: Para isto funcionar, você precisará de um endpoint no backend.
             // Exemplo: PUT /api/users/update-password
             var response = await Http.PutAsJsonAsync("users/update-password", editModel, _cts.Token);
 
