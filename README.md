@@ -13,4 +13,4 @@ npm run dev
 dotnet watch
 
 
-integrantes : Arthur Campos , Arthur Medeiros , Filipe Correa , Vinicius Leite Murtinho
+integrantes : Arthur Campos , Arthur Medeiros , Filipe Correa , Vinicius Leite Murtinho , Vinicius Zimmermann , Ana Paula Ribeiro
